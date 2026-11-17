@@ -175,12 +175,12 @@ function NavIcon({ name }: { name: string }) {
   }
 }
 
-function CrownIcon() {
+function CrownIcon({ size = 34 }: { size?: number }) {
   return (
     <svg
       className="brand-crown"
-      width="34"
-      height="28"
+      width={size}
+      height={Math.round(size * 0.82)}
       viewBox="0 0 34 28"
       fill="none"
       aria-hidden
@@ -196,6 +196,30 @@ function CrownIcon() {
       <circle cx="17" cy="4" r="1.4" fill="currentColor" />
       <circle cx="27.5" cy="7.2" r="1.4" fill="currentColor" />
     </svg>
+  );
+}
+
+function SessionLoading({ label = "Preparing your workspace" }: { label?: string }) {
+  return (
+    <div className="session-boot" role="status" aria-live="polite">
+      <div className="session-boot-aura" aria-hidden />
+      <div className="session-boot-mark">
+        <span className="session-boot-ring" aria-hidden />
+        <span className="session-boot-ring session-boot-ring-delay" aria-hidden />
+        <div className="session-boot-crown">
+          <CrownIcon size={42} />
+        </div>
+      </div>
+      <strong className="session-boot-brand">IMPERIAL OS</strong>
+      <p className="session-boot-label">
+        {label}
+        <span className="session-boot-dots" aria-hidden>
+          <i />
+          <i />
+          <i />
+        </span>
+      </p>
+    </div>
   );
 }
 
@@ -240,19 +264,11 @@ export function AppShell({
   }
 
   if (!user) {
-    return (
-      <div className="login-page">
-        <p className="muted">Loading IMPERIAL OS…</p>
-      </div>
-    );
+    return <SessionLoading label="Verifying your session" />;
   }
 
   if (user.role !== "MANAGING_DIRECTOR" && mdOnlyPaths.has(pathname)) {
-    return (
-      <div className="login-page">
-        <p className="muted">Redirecting…</p>
-      </div>
-    );
+    return <SessionLoading label="Redirecting" />;
   }
 
   const visibleGroups = navGroups
