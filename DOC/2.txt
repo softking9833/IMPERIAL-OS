@@ -1,0 +1,29 @@
+Question 2 — Recorded Answer: Exact V1 Scope
+
+V1 exists to prove the Core Operating Loops of IMPERIAL OS.
+
+An Associate entering IMPERIAL OS has already completed the recruitment, client onboarding and client-authorisation process. IMPERIAL OS therefore begins with the Associate's internal development and operational journey.
+
+The core V1 Associate experience should allow them to:
+
+Enter IMPERIAL OS → Complete Field Readiness requirements → Receive Leader Approval → Become Field Ready → Receive Campaign & Territory Deployment → Execute in the Field → Record Activity → Complete Daily Learning & Roleplay → Measure Performance & Profitability → Identify Improvement → Repeat Daily.
+The three particularly important recurring loops are:
+
+Performance Loop — field activity is captured, KPIs/performance are calculated, results are reviewed, weaknesses are identified and improvement actions follow.
+
+Learning Loop — Associates continually receive and complete relevant learning, campaign education and development content.
+
+Roleplay Loop — Associates practise relevant skills regularly, submit/complete roleplays, receive assessment or approval, improve and repeat.
+
+These are not simply onboarding activities. Learning, roleplay and performance are ongoing daily/recurring operating loops throughout an Associate's development.
+
+Field Readiness is the initial gateway into field execution. The Managing Director/admin can configure the required curriculum, the Associate completes the mandatory requirements, and an authorised leader gives final V1 approval before the Associate becomes eligible for deployment.
+
+Once Field Ready, the Associate can be assigned a Campaign and Territory, see the information required for that day's deployment, enter Field, record operational activity such as doors, funnel/KPI activity, callbacks and sales, and have that data flow automatically into Performance.
+Leadership/Admin V1 must therefore provide enough functionality to manage the people, learning content, roleplay requirements, campaigns, territories, Field Readiness approvals and core business configuration necessary to operate these loops without routine developer intervention.
+
+V1 does not need the complete Growth Loop system yet. Full Leadership, Recognition and Progression systems can be developed later. However, the underlying architecture and data model should anticipate them so that they can be added without redesigning the platform.
+
+V1 also deliberately defers advanced capabilities such as AI coaching/assessment, sophisticated territory intelligence, route optimisation, interactive mapping, advanced analytics, extensive automation and external integrations unless a particular capability proves essential or inexpensive during development.
+
+V1 is successful when IMPERIAL can take an already-onboarded Associate, make them Field Ready, deploy them, support their daily execution, measure whether they're performing/profitable, continuously develop them through learning and roleplay, and repeat that cycle reliably

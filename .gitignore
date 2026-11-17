@@ -1,0 +1,26 @@
+node_modules
+dist
+.next
+.turbo
+.expo
+.env
+.env.*
+!.env.example
+*.db
+*.db-journal
+.DS_Store
+coverage
+.vscode
+_blueprint.txt
+_devspec.txt
+apps/api/prisma/dev.db
+apps/api/prisma/dev.db-journal
+apps/mobile/.expo
+apps/mobile/dist
+
+# Local archives / build artifacts (not needed on GitHub)
+*.zip
+Build/
+video/
+*.apk
+*.aab

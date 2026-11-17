@@ -1,0 +1,49 @@
+Question 3 — FINAL Recorded Answer
+
+IMPERIAL OS must support both Predicted Profitability and Actual/Realised Profitability.
+
+A sale is recorded immediately when the customer agrees and completes/signs up for the sale. From that moment, the sale contributes to the Associate's Predicted Revenue and Predicted Profitability.
+
+Sales then pass through the relevant client's processing, verification and payment lifecycle. For the current business model, this may look approximately like:
+
+Week 1: Sale generated
+Week 2: Sale processing/verification
+Week 3: Final processing and payment
+
+However, these timings must not be hard-coded. Different clients and campaigns may have different verification processes, payment schedules and commercial arrangements.
+
+For V1, the Associate manually records the sale through the operational/Field workflow. IMPERIAL then uses the commercial configuration of that Associate/campaign to calculate its predicted financial value automatically.
+
+During processing, authorised management users can update the underlying status of the sale through the Admin Portal based on information received from the client—for example, whether the sale remains valid, has cancelled, has been rejected, has become payable or has been paid.
+
+Changes to the underlying sale status should automatically update Predicted Revenue and Predicted Profitability.
+
+Once the sale reaches the configured financial confirmation state, its revenue becomes Actual/Realised Revenue and IMPERIAL automatically recalculates Actual/Realised Profitability.
+
+Managers should not manually type the resulting profit figure. They update the underlying business facts; IMPERIAL performs the financial calculations.
+Commercial Configuration — Admin Portal
+
+The commercial assumptions used by the profitability engine must be business-configurable rather than hard-coded.
+
+Authorised administrators must be able to configure and update relevant commercial information through the Admin Portal without requiring developer intervention.
+
+For V1, this should include at minimum:
+
+Campaign / Client Commercials
+
+Revenue/value per confirmed sale.
+Relevant sale statuses.
+Which status causes revenue to become Actual/Realised.
+Expected processing/payment timeframe where operationally useful.
+
+Associate Commercials
+
+Associate day rate.
+Effective date of a new day rate so historical profitability remains accurate.
+
+Commercial configuration should be capable of differing between campaigns where necessary.
+
+For example, Campaign A may pay £100 per sale while Campaign B may pay £180 per sale. IMPERIAL should calculate profitability using the commercial rules belonging to the relevant campaign rather than using one global hard-coded sale value.
+
+Similarly, if an Associate's day rate changes from £85 to £100, historical days worked at £85 must remain calculated at £85. The new rate should apply from its configured effective date rather than rewriting historical profitability.
+The £85 day rate, £100 sale value and three-week payment cycle are examples of today's commercial model, not system rules. I want the commercial model configurable through the Admin Portal in the same philosophy as the curriculum builder. IMPERIAL should be able to change clients, campaigns, sale values, day rates and commercial rules without us needing to change the code every time

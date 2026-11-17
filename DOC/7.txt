@@ -1,0 +1,96 @@
+## Q7 — Which Parts of the Admin Portal Need to Be Configurable From Day One?
+
+The governing principle is **Business Empowerment**.
+
+Wherever practical, anything IMPERIAL needs to routinely change in order to operate the business should be configurable through the Admin Portal rather than hard-coded or requiring developer intervention.
+
+For V1, the main priorities are:
+
+### 1. Learning & Field Readiness
+
+I need to be able to create and manage:
+
+* Curriculums, courses, lessons and modules
+* Videos and written content
+* Quizzes and assessments
+* Roleplay requirements
+* Mandatory/optional learning
+* Field Readiness requirements
+* Campaign-specific learning
+
+The developer builds the learning system; IMPERIAL controls the curriculum.
+
+### 2. Users & Organisation
+
+I need to be able to:
+
+* Create/manage/deactivate users
+* Assign and change roles
+* Assign campaigns
+* Manage relevant organisational assignments
+* Eventually configure management roles, Perspectives, Scopes and permissions as the organisation grows
+
+### 3. Campaigns, Territories & Deployment
+
+I need to be able to:
+
+* Create/edit/archive campaigns
+* Create/manage territories
+* Assign Associates to campaigns
+* Assign Associates to territories/deployments
+* Manage campaign-specific operational information
+
+### 4. Commercials & Profitability
+
+I need to be able to configure:
+
+* Sale values by campaign/client
+* Associate day rates
+* Effective dates for commercial changes
+* Sale statuses
+* Rules determining when revenue becomes Actual/Realised
+* Relevant profitability assumptions
+
+Commercial changes must not require code changes.
+
+### 5. KPI & Funnel Configuration
+
+This is important from Day One.
+
+I need to be able to configure the KPI/funnel structure rather than having one sales process permanently hard-coded.
+
+This should include things such as:
+
+* Funnel stages
+* KPI types
+* Targets
+* Relevant thresholds
+* Campaign-specific KPI/funnel differences
+
+If IMPERIAL changes its sales process or a new campaign operates differently, I should be able to configure that through Admin.
+
+### 6. Essential Business Rules
+
+V1 does not need every imaginable business rule to have an Admin interface immediately.
+
+However, the rules required to operate the Core Operating Loops should be configurable where practical, including things such as:
+
+* Field Readiness requirements
+* KPI targets/thresholds
+* Callback configuration
+* End of Day deadlines
+* Approval requirements
+* Relevant operating thresholds
+
+The architecture should allow additional business configuration to be exposed through the Admin Portal as IMPERIAL grows.
+
+### Core Principle
+
+A useful distinction is:
+
+**Developer owns the software architecture and engines.
+IMPERIAL owns the business configuration inside them.**
+
+If something is expected to change routinely as part of running the business, it should not be unnecessarily hard-coded.
+
+V1 does not need an enormous generic configuration system for everything, but it must establish **Business Empowerment as an architectural principle from Day One** so IMPERIAL can increasingly operate, configure and evolve itself without routine developer intervention.

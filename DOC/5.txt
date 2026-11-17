@@ -1,0 +1,59 @@
+## Q5 — What Absolutely Needs to Work Offline in the Field?
+
+Offline capability in V1 should focus specifically on protecting **business-critical Field execution**.
+
+An Associate should not be prevented from carrying out or recording their work simply because mobile connectivity becomes unreliable.
+
+### V1 Offline-Critical Functionality
+
+When connectivity is unavailable, the Associate should still be able to:
+
+* View recently loaded Active Campaign information.
+* View recently loaded Territory/deployment information.
+* Record doors and door outcomes.
+* Record KPI/activity inputs.
+* Record sales.
+* Create and update callbacks.
+* Record basic field/callback notes.
+* Draft an End of Day Report where practical.
+
+These actions should be stored safely on the device and queued for synchronisation when connectivity returns.
+
+### Synchronisation
+
+When the device reconnects, IMPERIAL OS should synchronise pending operational activity with the central backend.
+
+The application should clearly distinguish between:
+
+* Saved locally
+* Pending synchronisation
+* Synchronising
+* Successfully synchronised
+* Synchronisation failed
+
+Operational information must never be silently discarded, and the application must not tell the Associate that information has been successfully submitted to the central system when it has only been saved locally.
+
+The system should also protect against accidental duplicate submissions when reconnecting.
+
+### What Does Not Need Full Offline Support in V1
+
+V1 does not need to reproduce the entire IMPERIAL platform offline.
+
+Features such as:
+
+* Advanced Performance analytics
+* Company-wide dashboards/reporting
+* Admin Portal configuration
+* Curriculum creation
+* Business Rules configuration
+* Commercial configuration
+* Advanced mapping/route optimisation
+* Other management and administrative functionality
+
+can require connectivity.
+
+### Core Principle
+
+**Offline mode should protect Field execution, not replicate the entire platform offline.**
+
+If an Associate loses connectivity while working, they should be able to continue executing and recording the business-critical activities of their Field day. Once connectivity returns, IMPERIAL OS should safely synchronise that activity with the shared backend.

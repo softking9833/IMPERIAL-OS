@@ -1,0 +1,1125 @@
+Tomoe — 7/27/26, 7:57 AM
+they advertise projects around $20–$60+/hr depending on skills, so I’ve been looking into it as another way to earn while I’m between projects 
+and how is the new place, you liking it more than old one? 😄
+Sounds like work's been going well too
+are you still working at same place and commuting from the new area, or has that changed as well?
+Teon J. West — 7/28/26, 1:00 PM
+Thanks mate I appreciate it🤣🤣
+Do you have WhatsApp by any chance?
+Teon J. West — 7/28/26, 1:00 PM
+Oh that sounds pretty good
+Teon J. West — 7/28/26, 1:01 PM
+Yeah absolutely, it’s more affordable too!
+Teon J. West — 7/28/26, 1:01 PM
+Works been as hectic as usual haha🤣
+Teon J. West — 7/28/26, 1:03 PM
+Still in person to be fair
+Are you still available/ready to start building projects?
+Tomoe — 7/28/26, 1:36 PM
+Yeah mate, absolutely 😂
+I'm still ready to build whenever you are
+When do you reckon we can actually start the project, and have you got the features/requirements planned out a bit more now? 
+Send me whatever you’ve got and we can go through the details together and figure out the first steps.
+Tomoe — 7/29/26, 8:36 AM
+@Teon J. West
+Good morning
+Teon J. West — 7/29/26, 5:06 PM
+Hellooo good morninggg(or evening)
+
+I hope you’ve been well mate!
+Teon J. West — 7/29/26, 5:06 PM
+I’m going to write something up for you tonight so you have an idea of what I’m trying to build and we can iterate as we go along?
+I’ll send this to you tonight and then we can add or take bits away basically, I’ll also need to explain to you the ins & outs of the business so you understand WHY we’re building what we’re building
+@Tomoe
+Tomoe — 7/29/26, 6:12 PM
+Sounds good, I'm looking forward to it.
+ Take your time and write everything down
+the more context I have about the business, the goals, and how you want it to work day to day, the better I can design the system.
+Once I read it, we can break it into features, figure out the MVP, and plan the backend, database, and everything else step by step.
+Tomoe — 7/30/26, 6:18 AM
+GM 
+Teon J. West — 7/30/26, 7:30 AM
+Morning @Tomoe  wasn’t able to do it last night, my laptop wasn’t with me, I’ll get it over to you tonight
+Teon J. West — 7/30/26, 7:30 AM
+Absolutely!!
+Tomoe — 7/30/26, 7:31 AM
+i will wait for you
+hope you have a nice day
+Teon J. West — 7/30/26, 7:48 PM
+I haven’t forgotten mate, just been a bit busy!
+Tomoe — 7/30/26, 7:58 PM
+it's okay, take your time
+Tomoe — 8/2/26, 7:51 PM
+Hello
+@Teon J. West
+Did you have a good weekend?
+Teon J. West — 8/3/26, 9:46 AM
+Hey mate, I did have a good weekend thanks what about you?
+I'm working on this as we speak, I'll have something for you soon >:D
+
+Tomoe — 8/3/26, 9:58 AM
+glad to hear that mate
+my weekend was good too
+thanks
+no worries all
+take your time
+I'm looking forward to reading it
+and once you've got something ready we'll go through everything together and turn it into a solid plan before we staring building
+Teon J. West — 8/3/26, 10:04 AM
+I should be done today, I'm spending the next 6 hours minimum on this
+What did you get up to on the weekend anyways?
+Tomoe — 8/3/26, 10:05 AM
+gaming 😅
+how about you?
+Also, can I use the PC we used to create the freelance account?
+Teon J. West — 8/4/26, 7:15 AM
+Just had to order a shed to put a long of my belongings @Tomoe
+Teon J. West — 8/4/26, 7:17 AM
+It’s not possible unfortunately, deeply apologise
+
+We are starting our project soon however, I have finished one document that explains the business.  I have called it the “Blueprint”
+
+I am creating the last document called “Dev Spec” so it’s how to build it
+
+Please read both🙏🏿 I have been working on this for ages but this is only draft one of both anyways
+
+If you are confused about anything, ask me away
+Tomoe — 8/4/26, 8:43 AM
+No worries at all, mate. 😄
+Honestly, I'm just excited to finally get started
+Tomoe — 8/4/26, 9:38 AM
+Hi
+@Teon J. West
+Teon J. West — 8/4/26, 11:33 AM
+Hey mate @Tomoe 
+
+Hope you're doing well 😄 
+
+I've finally reached the point where I think it's time for you to properly see the vision for IMPERIAL Operating System.
+
+I've attached three documents and I'd really appreciate it if you could read them in this order:
+
+Developer Introduction
+IMPERIAL OS Blueprint
+IMPERIAL Developer Specification
+
+Thank you so much for your patience. I've had a lot going on but our project is now in motion! 💙 🙏 
+
+The business is still evolving, so some operational policies and workflows will naturally be refined over time. That's intentional. 
+
+I'd much rather build on the right architecture now and iterate than spend months trying to perfect every business rule before we write any code haha.  I tend to be a perfectionist and am trying to focus more on raw ACTION.
+
+Take your time reading through everything, and once you've had a chance to digest it, let's arrange a call to go through it together. I'm looking forward to hearing your thoughts and starting this journey properly💪🏿 
+Attachment file type: document
+IMPERIAL OS Dev Intro.docx
+15.64 KB
+Attachment file type: document
+The IMPERIAL OS Blueprint v1.docx
+40.82 KB
+Attachment file type: document
+IMPERIAL OS DEVELOPER SPECIFICATION.docx
+209.79 KB
+There's actually a lot here tbh😂 🤣  I'm going to spend this weekend re-reading everything myself and iterating on it over time, so don't feel like you need to read it all in one sitting either mate honestly... please take your time, make notes && if anything raises questions or you think there's a better technical approach... just let me know and we'll work through it together 🫡
+Tomoe — 8/4/26, 11:40 AM
+Thanks mate, I really appreciate the amount of work you've put into this 🙏 I'll read everything in the order you suggested and take some notes as I go
+I already like the idea of building the right architecture first and iterating later
+it'll make the project much easier to scale.
+Once I've gone through all three docs, let's jump on a call and walk through my questions and ideas together. Looking forward to getting started!
+Teon J. West — 8/4/26, 11:41 AM
+One more thing mate @Tomoe 
+
+I just wanted to say thank you for sticking with me over the past few months.  I know I've asked you to wait a few times while I've been figuring everything out and you've always been patient, kept checking in with me! I really appreciate that haha
+
+I don't think I would've started this now and I probably would've procrastinated otherwise so THANK YOU 😂  I'm genuinely excited to finally get this project underway
+
+Please send me your Solana address. I'd like to send you a small token of appreciation... not as payment, just as a thank you for your patience and for being a good friend😄 🫂
+Tomoe — 8/4/26, 11:43 AM
+Thanks mate, that honestly means a lot. 
+I really believe this project has a lot of potential, so waiting a bit wasn't a big deal. 😂 I'm excited to finally get started too!
+Really appreciate that, thank you! 🙏
+my USDT (Solana) address is
+5uvTaPEtQydWJX77Gy6GN7PAAQvYJ2i2fT1Nd4iqCoKY
+Teon J. West — 8/4/26, 12:03 PM
+Is that Solana or USDT?
+@Tomoe
+Tomoe — 8/4/26, 12:03 PM
+USDT
+Teon J. West — 8/4/26, 12:06 PM
+Why did you put “USDT Solana”?
+Tomoe — 8/4/26, 12:06 PM
+it's the USDT token on the Solana network
+The address is a Solana wallet address, but I use it to receive USDT (SPL), not native SOL
+Teon J. West — 8/4/26, 12:07 PM
+Ohoh
+It’s not letting me do it
+For some weird reason
+Tomoe — 8/4/26, 12:08 PM
+hmm, do you use ether network?
+erc20
+If not, no worries at all
+you really don't need to send me anything yet
+we haven't even started working on the project, so just keep it until we get going
+I already appreciate the thought, mate
+Teon J. West — 8/4/26, 12:12 PM
+No mate a man’s word is his honour, I’ve committed to it now haha
+
+Even if it’s not a lot, a small token of appreciation goes a long way😊
+Teon J. West — 8/4/26, 12:12 PM
+Is that the Ethereum one?
+I can try that
+Send me the wallet addy please
+Tomoe — 8/4/26, 12:12 PM
+0xc69691fb76c71e0e7e8a64be1cad80a334f776f3
+seriously, there's no rush at all. I'm just happy we're finally getting started on the project. 😄
+Teon J. West — 8/4/26, 12:23 PM
+Is this Ethereum or USDT
+Wallet?
+Tomoe — 8/4/26, 12:23 PM
+It's an Ethereum wallet address 
+ You can send USDT over the Ethereum (ERC20) network to that address
+The wallet address is the same
+the important part is choosing the ERC20 network when sending
+USDC is also fine
+
+
+Teon J. West — 8/4/26, 12:38 PM
+This one?
+Tomoe — 8/4/26, 12:38 PM
+yeah
+Teon J. West — 8/4/26, 12:41 PM
+You get that?
+Tomoe — 8/4/26, 12:42 PM
+35?
+Thank you
+Teon J. West — 8/4/26, 12:42 PM
+Great, once again thank you😊
+Tomoe — 8/4/26, 12:42 PM
+got that
+Teon J. West — 8/4/26, 12:42 PM
+Not thank me, Thank You haha
+Teon J. West — 8/4/26, 12:42 PM
+Yeah it’s something small I thought I’d show my appreciate mate🙏🏿 British culture I hope you accept it
+Tomoe — 8/4/26, 12:43 PM
+Hahaha, thank you, mate
+I really appreciate it
+I'll accept it this time, but next time let's save it for when we've actually started building the project
+ I'm looking forward to working together! 💪🤝
+Teon J. West — 8/4/26, 12:46 PM
+Absolutely, I’m going to go do some shopping
+
+When I’m back I’m going to start preparing other potential projects for once we finish this one because I’ve got quite a few for us to go through
+
+Then either tomorrow or the day after I’m going to even re-read everything I’ve sent across to you
+Like a timeline or sequence of projects for the future*^
+Teon J. West — 8/5/26, 5:51 AM
+Hey @Tomoe   Just wanted to see if you’ve managed to start looking over the docs I sent?
+Teon J. West — 8/5/26, 6:11 AM
+Also, could you add this as 1.7b in Chapter 1 Product Overview, directly after 1.7 Platform Philosophy in the Dev Spec, this is crucial:
+
+1.7b Multi-Surface Platform Strategy
+
+IMPERIAL OS must be designed as one integrated platform delivered through multiple interfaces.
+
+The primary interfaces are:
+
+Mobile Application
+
+The mobile application is the primary execution interface for Associates and field-based leaders.
+
+It should prioritise:
+
+Daily direction.
+Learning.
+Field execution.
+Callback management.
+KPI capture.
+Performance awareness.
+Fast, low-friction interactions.
+
+Web Application
+
+The web application is the primary management, configuration and analytical interface for authorised leaders and administrators.
+
+It should prioritise:
+
+Administration Portal capabilities.
+Curriculum and content creation.
+User and organisational management.
+Campaign and territory configuration.
+Business Rule configuration.
+KPI and PNL configuration.
+Reporting and analytics.
+Bulk actions.
+Audit review.
+Management dashboards.
+
+The mobile and web applications must not operate as disconnected systems.
+
+They must share:
+
+One backend.
+One identity system.
+One permissions model.
+One Perspective and Scope architecture.
+One set of Business Rules.
+Shared operational data.
+Shared audit history.
+Shared sources of truth.
+
+Changes made through one interface must be reflected throughout the platform according to permissions and synchronisation rules.
+
+The interface should follow the job being performed:
+
+Mobile for execution. Web for configuration, management and analysis.
+
+Core management information may remain accessible on mobile where useful, and selected Associate workflows may be accessible through web. However, neither interface should be compromised by attempting to make every workflow identical across every device.
+Tomoe — 8/5/26, 12:35 PM
+Hello
+mate
+sorry for late reply
+I'm really busy today
+I've started reading through them. 😊 I really like the overall direction, and I've been taking notes as I go so we can discuss everything properly on our call
+I also read the new 1.7b Multi-Surface Platform Strategy section.
+I completely agree with that approach
+it makes much more sense to have one backend, one identity system, one permissions model, and shared business logic, with mobile focused on execution and web focused on management and configuration. It'll be much easier to maintain and scale long term. 💪
+
+
+Tomoe — 8/6/26, 10:30 AM
+Hello
+How are you doing today?
+Teon J. West — 8/6/26, 10:31 AM
+I’m great @Tomoe  just working at the moment, been super busy but I can chat here & there
+How about yourself?
+Tomoe — 8/6/26, 10:32 AM
+I'm doing well too, mate
+just keeping busy reading through the docs and thinking about architecture
+looking forward to catching up properly once you've got a bit more free time
+Teon J. West — 8/6/26, 10:34 AM
+Haha I know it’s a lot😂🤣 how are you finding it?
+Be as honest as possible
+Also, if you have any questions… feel free to compile a list or just shoot the question over and I’ll answer as best as I can
+This project is our first I’m actually so excited🔥
+Tomoe — 8/6/26, 10:37 AM
+Hahaha yeah, there's definitely a lot to take in 😂 But honestly, I'm really enjoying it.
+I've already got a few architecture ideas and questions written down, especially around the MVP, backend structure, user roles, and how the mobile and web apps should interact
+I'm excited to build this with you too! 💪
+Teon J. West — 8/6/26, 10:41 AM
+Yeah mate this is a SUPER important project we have to nail it😂 that’s why I tried to make sure it was super detailed(and clear?🥲)
+Teon J. West — 8/6/26, 10:41 AM
+Banging well whenever you’re ready let me know of any questions you might gave or ideas to discuss
+Also, I have our next few projects planned out already🙂
+I haven’t got any documents for them yet but I will be making them over the course of this month
+But I know the sequencing and what needs to be worked on
+Tomoe — 8/6/26, 10:43 AM
+That's actually great to hear. 😄
+Teon J. West — 8/6/26, 10:44 AM
+There are 3 massive projects that we have pending😂 just to let you know
+
+One of them I know for a fact is much bigger than this haha
+Tomoe — 8/6/26, 10:45 AM
+nice
+Teon J. West — 8/6/26, 10:46 AM
+It’s crazy to think we met up because of a simple introduction you did in a Discord Server
+
+Tomoe — 8/6/26, 10:49 AM
+Attachment file type: acrobat
+1.pdf
+67.78 KB
+Tomoe — 8/6/26, 10:50 AM
+Hahaha it's pretty crazy when you think about it 😂 
+Who would've thought a simple Discord introduction would turn into us working on multiple big projects together?
+I'm really looking forward to it
+let's make sure we build a solid foundation with IMPERIAL OS first, then the next projects will be much easier to tackle
+🤝
+Tomoe — 8/6/26, 10:51 AM
+I've been reading through the documentation and wanted to share some early thought
+these aren't final decisions
+just my initial ideas so we can discuss them together 
+Teon J. West — 8/6/26, 10:56 AM
+Absolutely let’s set the foundation with IMPERIAL OS & smash out each project one by one😎🔥 Mate that beer is still on me when you decide to come to London🤣🤣💪🏿
+Teon J. West — 8/6/26, 10:56 AM
+Amazing I’ll go through this in about 4-5 hours
+Legend!
+Tomoe — 8/6/26, 10:57 AM
+Hahaha deal! 😂 
+I'll definitely take you up on that beer one day🍻
+No rush at all, mate
+Have a look when you've got time, and we can go through everything together
+I'd also like to chat about the UI/UX and overall design direction at some point so we can keep the technical architecture and user experience aligned from the start
+I think that'll give us a really solid foundation
+Teon J. West — 8/6/26, 5:14 PM
+Mate this is honestly brilliant. Thank you for taking the time to go through everything so thoroughly!
+
+Reading your notes has actually made me even more excited because it feels like you've understood the overall vision rather than just looking at it as another app project💪🔥  It already feels like we're aligned on the direction which is great
+
+I completely agree with the shared backend and two-client approach (mobile for execution and web for management/configuration).  I think that's absolutely the right direction and it'll give us a really solid foundation to build on long term
+
+I also really like your thinking around defining a smaller MVP first.  We've got the long-term architecture, but I definitely don't expect us to build everything in Version 1 haha.  I think agreeing on a sensible MVP together before we start development is exactly the right approach
+
+My thinking at the moment is that Version 1 should focus on proving the Core Operating Loops(Not sure if you've read up to this part yet in the Blueprint or spec?).  A Junior Associate/Associate should be able to join the business, complete learning, go into the field, record their activity, track their performance and understand whether they're profitable.  If we can nail that experience first, then we can build everything else on top of it too
+@Tomoe 
+
+Regarding your questions:
+
+1)  For the mobile app, I'd initially build it around myself (since I'll be wearing multiple hats at the start), along with Junior Associates and Associates. As the business grows, we'll naturally expand the different Perspectives for management roles
+
+2)  For the web application, I think Version 1 only really needs to support me. It'll mainly be where I build and manage the business, creating learning content, managing users, campaigns, business rules and everything else we've discussed
+
+3)  Integrations aren't a huge priority for Version 1, but I do think they'll become very important as the platform grows, especially around the Field Module and operational side of the business. I'd rather architect for them now than force them in later
+
+4)  Offline mode isn't something I think we need to build immediately, but I do think it's worth keeping in mind architecturally for the future given the nature of field sales
+
+I think designing the UI/UX in Figma before development is a great idea, as it'll give us something tangible to iterate on before we start building.  I'll send you the IMPERIAL logo as well, and we can use that as a starting point for the visual direction. I'm not too opinionated on the design style yet.  I want something that's clean, modern and genuinely enjoyable to use
+
+I'm really looking forward to jumping on a call once you've finished reading everything.  Keep making notes as you go, and mate honestly don't hesitate to challenge ideas or suggest better technical approaches if you think there's a cleaner way of achieving the same outcome. 
+
+Really appreciate the effort you've put into this already mate
+
+Also, one thing I've learned whilst putting all of this together is that I'd much rather build strong foundations than rush features. If we get the architecture right now, we can iterate on everything else over time so no rush 
+Here's the logo
+
+Tomoe — 8/6/26, 9:27 PM
+Sounds good, mate. 😄 
+While reading through everything, I've been putting together some technical planning notes as well so we have something concrete to discuss
+I think our first call should focus on agreeing on the MVP, overall architecture, database structure, UI/UX direction, and the development milestones before we start coding
+One thing I'd also like to discuss is how you'd like to structure development
+roughly how you'd like to split the project into milestones, what sort of timeline you're aiming for, and how you'd prefer to handle payments for each milestone. 
+I think it'll help us stay organised from the start. 💪 
+Tomoe — 8/6/26, 9:37 PM
+Whenever you've got a bit of free time, let's schedule our first project call. I think it'll be much easier to go through the MVP, architecture, UI/UX, and milestones together than over text. 😄 
+Teon J. West — 8/7/26, 10:17 AM
+Sounds perfect mate completely agree 💪
+
+I think getting the MVP, architecture, database structure, UI/UX and milestones agreed before we start coding is definitely the right way to go 100%
+
+I also agree with splitting development into clear milestones with payments at each stage. Once we've agreed the MVP, I'd like to hear what you think is a realistic timeline and the best way to structure those milestones rather than me throwing an arbitrary deadline at you haha
+
+I'll have a think about the MVP and UI/UX beforehand, and for the technical architecture/database side I'll explain exactly how I need the product and business to work and lean on your judgement for the best way to engineer it
+
+Let me know when you're free mate and let's have our first proper call about our project 🔥
+I'd say we could have our call on Sunday or Monday?
+Tomoe — 8/7/26, 10:25 AM
+Monday works perfectly for me, mate 👍
+I will spend the weekend organizing everything into a proper technical planning document(mvp, architecture, database, milestones ui/ux and question)so we can make decisions efficiently on the call and start with a clear plan afterwards
+Teon J. West — 8/9/26, 6:58 PM
+Hey @Tomoe  we might have to have our call later on in the week!
+
+I doubt I’ll be able to make Monday, super busy start to the week
+Tomoe — 8/9/26, 6:58 PM
+Did you have a good weekend?
+just let me know which day and time works best for you, and I'll make sure I'm free
+Also, I was thinking ahead a little. Once we've agreed on the MVP, what's your ideal timeline for getting Version 1 completed? 
+Teon J. West — 8/11/26, 5:56 AM
+I had a great weekend @Tomoe 
+
+I will respond properly soon!  Just been super busy
+
+Also, I’ll answer your question properly whether we’ll be working project by project or like a long term contractor which is what you asked right?
+Thanks for being patient with my responses, it really is a super busy start to the week
+Tomoe — 8/11/26, 6:04 AM
+No worries at all, mate
+Thanks for letting me know
+Yeah, that's exactly what I was asking
+I'm happy with either approach
+I just wanted to understand how you're planning to structure everything so I can plan my time properly
+We can go through it whenever you've got a bit more time
+Tomoe — 8/12/26, 7:57 AM
+Hello
+@Teon J. West
+How are you doing?
+How's business going?
+Are you still busy?
+Teon J. West — 8/12/26, 8:13 PM
+Hey mate @Tomoe  yeah been super busy, back to back meetings all week tbh
+How about yourself?  How’ve you been?
+Teon J. West — 8/12/26, 8:14 PM
+Absolutely that sounds good!
+
+Would you be available to go through everything on Sunday?
+
+I think that gives me enough time to knock everything out that I need to this week
+Tomoe — 8/12/26, 9:16 PM
+sounds good mate
+Sunday works well for me
+I'll spend the next few days finishing my notes and putting together a clear MVP proposal, architecture, milestones, and a few UI/UX ideas so we have something concrete to discuss on the call
+Looking forward to it
+I think once we're aligned on everything, we can put together a solid development plan and get started
+Tomoe — 8/14/26, 10:25 PM
+Hello
+@Teon J. West
+is your business going well?
+Teon J. West — 8/15/26, 12:51 AM
+@Tomoe  it’s going okay, past few days I’ve been ill in bed haha
+What about yourself?
+Tomoe — 8/15/26, 2:39 PM
+Ah mate, hope you're feeling better
+ Sounds like it's been a rough week 😅
+I've been good
+Teon J. West — 8/16/26, 7:32 PM
+It has been a rough week, I hate being ill as it impacts work but I’m getting better😂💪🏿 sorry I know we’re supposed to be having our meeting soon
+How’s your weekend been?
+Tomoe — 8/16/26, 7:40 PM
+glad to hear you're feeling a bit better, mate
+no need to apologize, your health comes first
+my weekend's been good too, just been organizing my notes and thinking through the architecture a bit more, so we'll be in a good spot whenever you're ready to have the call
+
+Tomoe — 8/17/26, 8:55 AM
+Hello
+@Teon J. West
+Gm
+Teon J. West — 8/17/26, 8:27 PM
+That’s good to hear!
+
+We’ll jump on call soon, glad to see you’re excited😂
+
+Have you managed to read through the documents I sent you btw?
+Tomoe — 8/18/26, 8:56 AM
+Hello
+Tomoe — 8/18/26, 9:05 AM
+yeah mate, I've read through all of them
+I'm looking forward to the call 
+I think it'll be much easier to go through everything together than over text
+Teon J. West — 8/18/26, 9:23 AM
+You legend!!!
+Tomoe — 8/18/26, 9:26 AM
+One thing I was also wondering
+will IMPERIAL OS be funded by the company?
+Teon J. West — 8/18/26, 9:48 AM
+Yeah haha it is my company and funded by the company but it’s also a startup and currently just me so it’s not like we’re some massive conglomerate😂 it’s basically just me, Imperial and you
+
+I do have an accountant and mentors as well to be fair
+
+I do also have a few clients that I’ve managed to secure which I’m proud of haha, so we’re moving just kinda slowly 
+The goal is ImperialOS allows me to recruit and scale
+Tomoe — 8/18/26, 10:05 AM
+that's actually exciting, mate
+every big company starts somewhere, and having real clients already is a great sign
+I like that IMPERIAL OS isn't just software for the sake of it
+it's something you're building to help the business recruit, operate, and scale
+Tomoe — 8/21/26, 6:40 AM
+Hey mate, hope you're doing well
+just wanted to check in and see how you're feeling now, and how things have been going with the business
+Tomoe — 8/21/26, 12:36 PM
+@Teon J. West
+Teon J. West — 8/22/26, 11:07 AM
+Hey @Tomoe  feeling back at 100%, business has been good
+
+Let’s catch up about our project properly on Monday/Tuesday
+We’ll have our call then
+Should we call over Discord?
+Tomoe — 8/22/26, 11:08 AM
+yes, discord or google meet.
+both are good
+Tomoe — 8/22/26, 11:08 AM
+sounds great
+have a great weekend
+Teon J. West — 8/24/26, 6:36 AM
+Hey mate how was your weekend?
+Tomoe — 8/24/26, 7:05 AM
+I'm good
+how about yours?
+looking forward to catching up and doing through everything properly on the call
+I’ve already got the call set up and I’m ready on my side
+ whenever you’re free, we can jump on and go through the project properly 
+Tomoe — 8/24/26, 2:03 PM
+Hi
+@Teon J. West
+How are you doing today? 
+Tomoe — 8/25/26, 7:42 AM
+Hi
+GM
+Teon J. West — 8/26/26, 5:27 PM
+Hey @Tomoe  hope you’re well mate!
+
+I haven’t forgotten about our call just a few things came up
+How’ve you been?
+Tomoe — 8/26/26, 5:40 PM
+I’ve been good
+I picked up a small project in the meantime and got that wrapped up, so I’ve mainly just been waiting to get started on ours 😂
+ I’m genuinely looking forward to it, and I’m hoping the business keeps going well for you too 
+keen to finally go through everything properly on the call
+Teon J. West — 8/27/26, 7:03 AM
+I promise we’ll go through everything soon I’ve just been really busy😂 @Tomoe  it’s at the top of the agenda!
+How did your project go?
+You finish projects really quickly haha
+Tomoe — 8/27/26, 7:27 AM
+Hahaha yeah, it went pretty smoothly mate 
+got it wrapped up without too much trouble
+ It was only a small one though, nothing compared to what we’ve got planned for IMPERIAL
+Teon J. West — 8/27/26, 7:48 PM
+Absolutely @Tomoe 
+
+I’m not working after this so let’s jump on call here
+
+Thanks for being patient I’ve been super busy with the business
+
+I’ll try to stick to agreed schedules & time frames more
+Image
+After my dental appointment, we’ll jump on call, it may be an hour or so
+
+What time would that be approximately for you?
+Is it possible?
+
+Tomoe — 8/27/26, 7:53 PM
+yeah mate, it should be possible, but I don't think I'll be available within the next 24 hours unfortunately
+I'll let you know as soon as I know when I'm free, and we can get the call locked in from there 👍
+Tomoe — 8/28/26, 7:08 AM
+@Teon J. West
+How are you doing today?
+Tomoe — 8/28/26, 9:10 AM
+I'm free for today
+Teon J. West — 8/28/26, 4:02 PM
+Hey @Tomoe  I’m fine thanks just finished work, how are you?
+Teon J. West — 8/28/26, 4:03 PM
+Our call is for tomorrow not today
+Tomoe — 8/28/26, 6:48 PM
+I'm good thank you
+please let me know a convenient time
+Teon J. West — 8/29/26, 6:47 PM
+Will do @Tomoe 
+
+Hope your weekend has been going well
+Tomoe — 8/29/26, 7:02 PM
+Have a good weekend
+I'm waiting our project  😅
+Teon J. West — 8/30/26, 9:56 AM
+@Tomoe  I haven’t forgotten I promise, I’ll be calling you in a few hours
+I’m just re-reading up on the documents now as we speak
+Thanks for being patient with me, don’t worry full steam ahead soon😂💪🏿
+Tomoe — 8/30/26, 3:10 PM
+No worries at all mate 😂
+I appreciate you taking the time to go back through everything
+I’m ready on my side too, just give me a shout when you’re ready and we’ll jump on💪 
+You missed a call from 
+Teon J. West
+ that lasted a minute. — 8/30/26, 3:16 PM
+Teon J. West — 8/30/26, 3:18 PM
+@Tomoe  Give us a ring mate!
+Tomoe — 8/30/26, 3:18 PM
+It's dawn here  😅  (3:00a.m)
+let's talk tomorrow. 🙏
+Teon J. West — 8/30/26, 3:19 PM
+Oh damn I'm so sorry mate haha
+Tomoe — 8/30/26, 3:19 PM
+sorry
+Tomoe — 8/30/26, 3:19 PM
+nono it's okay
+Teon J. West — 8/30/26, 3:19 PM
+I haven't even finished reading through the spec/blueprint, I just thought I'd at least have our first call to get things started otherwise I never will
+😂
+Tomoe — 8/30/26, 3:20 PM
+I'll work with your timezone
+I'm a bit tired today because I spent the weekend
+Teon J. West — 8/30/26, 3:20 PM
+By the way, just to help me prepare and not jump on the call and be like "Uhh I dunno", have you got anything specific you'd like me to address?  Any questions you want me to have answers to?
+Teon J. West — 8/30/26, 3:20 PM
+No don't worry mate I'll work with your timezone
+I want you to be able to operate at max capacity so we can execute our project efficiently, if I have to be up at awkward times I will be haha
+What time do you usually wake & sleep?
+Philippines time
+I will convert to UK time and be awake during those hours
+Tomoe — 8/30/26, 3:23 PM
+But honestly I’ve gotten pretty used to working around clients’ schedules, so I’m flexible 😂 Just pick a time that works for you and I’ll make it work
+Teon J. West — 8/30/26, 3:24 PM
+I want to be your prioritised client so whatever time you wake up and start work will be the time I wake up too🤣 whatever works with your schedule
+Tomoe — 8/30/26, 3:24 PM
+I'm a bit tired today because I went on a short trip over the weekend
+haha
+Teon J. West — 8/30/26, 3:24 PM
+It's okay haha, good that you're having a relaxing weekend
+It also gives me more time to go over everything I sent you before
+Let me know what time works for you once you've decided okay
+Teon J. West — 8/30/26, 3:25 PM
+And this as well please
+Tomoe — 8/30/26, 3:27 PM
+I usually work EST time, so don't worry
+let's have a ring tomorrow
+I'm really tired right now
+My head feels a bit heavy 😅 
+i hope you understand me
+Teon J. West — 8/30/26, 3:29 PM
+Yeah that's perfectly fine
+Tomoe — 8/30/26, 3:29 PM
+thx
+have a good dream
+Teon J. West — 8/30/26, 3:30 PM
+You don't need to answer this right now, maybe tomorrow before the call so I can be fully prepared
+Teon J. West — 8/30/26, 3:30 PM
+You too mate!
+Tomoe — 8/30/26, 10:10 PM
+Hello
+@Teon J. West
+I can call with you anytime after 13:00(UK) according to your time zone 
+let's call then
+Teon J. West — 8/31/26, 8:52 AM
+Hey mate I’m just out at the minute going to a meeting, happy to jump on call tonight or tomorrow 13:00 UK time @Tomoe
+Teon J. West — 8/31/26, 8:53 AM
+In the mean time could you get this over to me please
+Tomoe — 8/31/26, 8:53 AM
+good
+ok
+Tomoe — 8/31/26, 9:05 AM
+1.The real Associate journey from onboarding → Field Readiness → deployment → field → performance.
+2.The exact V1 scope and what we're deliberately leaving for later.
+3.How sales/revenue/costs and PNL actually work in the business, including what counts as a confirmed sale.
+4.The V1 roles and what each role needs to View, Act and Approve.
+5.What absolutely needs to work offline in the field.
+6.What learning content already exists and what needs to be created.
+7.Which parts of the Admin Portal you actually need to configure yourself from day one.
+8.How you'd like to structure the development milestones and payments.
+I've been going through the spec pretty deeply, so I’d rather clear up these business rules now and design the system around the real operation instead of making assumptions 😂
+
+Tomoe — 9/1/26, 7:07 AM
+Hello
+@Teon J. West
+How are you doing?
+Tomoe — 9/2/26, 9:23 AM
+Hi
+@Teon J. West
+Teon J. West — 9/3/26, 2:51 AM
+Hey mate @Tomoe
+
+Good morning I hope you’re well!
+
+Are you free today?
+Tomoe — 9/3/26, 6:10 AM
+good morning
+how are you doing?
+I'm free
+I'm always ready everyday 🫡 
+Teon J. West — 9/4/26, 9:50 AM
+@Tomoe  Could you be active in 4 hours please
+
+Sorry I have been extremely busy recently
+We will have call then if you’re available
+Tomoe — 9/4/26, 9:50 AM
+yeah, i'm free
+Teon J. West — 9/4/26, 9:51 AM
+Perfect thank you, I will call you on Discord
+Teon J. West — 9/4/26, 2:31 PM
+I'm still planning on calling you, just sorting a few things
+
+If it gets too late for you let me know 🙏
+Tomoe — 9/4/26, 2:31 PM
+it's okay
+I'm free
+if you are ready, feel free me to let me know 
+Teon J. West — 9/4/26, 3:25 PM
+Tomoe!!!  Are you awake
+Call in 5 minutes?
+Tomoe — 9/4/26, 3:29 PM
+here
+yeah, i can have a call rn
+You missed a call from 
+Teon J. West
+ that lasted 3 minutes. — 9/4/26, 3:30 PM
+Tomoe — 9/4/26, 3:30 PM
+wait
+i have an issue in discord
+let's have a google meet
+i'll send link
+https://meet.google.com/cmh-zjrg-gau
+Meet
+Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers.
+Image
+Teon J. West — 9/4/26, 3:40 PM
+1)
+
+What is the real Associate journey from onboarding → Field Readiness → deployment → field → performance?
+
+Anyone receiving an IMPERIAL OS account has already passed recruitment and the client's required onboarding/training and has been authorised to represent the campaign.
+
+From the IMPERIAL side, their journey starts with account creation and IMPERIAL onboarding. They then enter Field Readiness, where they must complete whatever mandatory curriculum I have configured — videos, lessons, quizzes, assessments, roleplays, etc.
+
+The curriculum itself shouldn't be hard-coded. I need to be able to build and change the Field Readiness curriculum through the Admin Portal.
+
+Once all mandatory requirements are passed, their status becomes Awaiting Field Readiness Approval. For V1, myself or an authorised leader gives final approval. Once approved, they become Field Ready and eligible for deployment.
+
+For deployment, they're assigned a Campaign and Territory. Any mandatory campaign-specific learning/preparation also needs to be completed. They should then be able to see clearly where they're working and what campaign they're working on before entering the field.
+
+During Field, the Associate executes the campaign, works their territory and manually records operational activity — door outcomes, funnel/KPI activity, sales and callbacks. The system should then reuse that activity automatically rather than asking them to enter the same information elsewhere.
+
+Performance consumes that field data and automatically calculates KPIs, funnel performance, profitability and other performance information.
+
+That performance then feeds back into coaching, learning and improvement, and the Associate repeats the cycle.
+
+Teon J. West — 9/4/26, 3:40 PM
+1)
+
+What is the real Associate journey from onboarding → Field Readiness → deployment → field → performance?
+
+Anyone receiving an IMPERIAL OS account has already passed recruitment and the client's required onboarding/training and has been authorised to represent the campaign.
+
+From the IMPERIAL side, their journey starts with account creation and IMPERIAL onboarding. They then enter Field Readiness, where they must complete whatever mandatory curriculum I have configured — videos, lessons, quizzes, assessments, roleplays, etc.
+
+The curriculum itself shouldn't be hard-coded. I need to be able to build and change the Field Readiness curriculum through the Admin Portal.
+
+Once all mandatory requirements are passed, their status becomes Awaiting Field Readiness Approval. For V1, myself or an authorised leader gives final approval. Once approved, they become Field Ready and eligible for deployment.
+
+For deployment, they're assigned a Campaign and Territory. Any mandatory campaign-specific learning/preparation also needs to be completed. They should then be able to see clearly where they're working and what campaign they're working on before entering the field.
+
+During Field, the Associate executes the campaign, works their territory and manually records operational activity — door outcomes, funnel/KPI activity, sales and callbacks. The system should then reuse that activity automatically rather than asking them to enter the same information elsewhere.
+
+Performance consumes that field data and automatically calculates KPIs, funnel performance, profitability and other performance information.
+
+That performance then feeds back into coaching, learning and improvement, and the Associate repeats the cycle.
+Question 2 — Recorded Answer: Exact V1 Scope
+
+V1 exists to prove the Core Operating Loops of IMPERIAL OS.
+
+An Associate entering IMPERIAL OS has already completed the recruitment, client onboarding and client-authorisation process. IMPERIAL OS therefore begins with the Associate's internal development and operational journey.
+
+message.txt
+4 KB
+Question 3 — FINAL Recorded Answer
+
+IMPERIAL OS must support both Predicted Profitability and Actual/Realised Profitability.
+
+A sale is recorded immediately when the customer agrees and completes/signs up for the sale. From that moment, the sale contributes to the Associate's Predicted Revenue and Predicted Profitability.
+
+message.txt
+4 KB
+Forwarded
+## Q4 — The V1 Roles and What Each Role Needs to View, Act and Approve
+
+### V1 Roles
+
+The operational roles required for Version 1 are:
+
+message.txt
+6 KB
+Future roles such as Senior Associate, Area Sales Manager and Regional Sales Manager should be administratively assignable and configurable through the Admin Portal rather than requiring developer intervention. V1 does not require a fully generic role-builder, but the permissions architecture must support this future Business Empowerment capability.
+Forwarded
+## Q5 — What Absolutely Needs to Work Offline in the Field?
+
+Offline capability in V1 should focus specifically on protecting **business-critical Field execution**.
+
+An Associate should not be prevented from carrying out or recording their work simply because mobile connectivity becomes unreliable.
+
+message.txt
+3 KB
+Q6 — What Learning Content Already Exists and What Needs to Be Created?
+Most of IMPERIAL's formal learning content still needs to be created.
+
+The knowledge, training philosophy, sales methodology and ideas largely exist within my head at the moment, but they have not yet been converted into a complete structured digital curriculum.
+
+This should not block development of the Learn Module.
+
+V1 Requirement
+The priority for V1 is to build the learning infrastructure and curriculum-management system, rather than hard-code a finished IMPERIAL curriculum into the application.
+
+Through the Admin Portal, authorised administrators should be able to create and manage learning content without developer intervention, including things such as:
+
+Curriculums/courses
+Modules and lessons
+Videos
+Written learning content
+Quizzes and assessments
+Roleplay requirements
+Mandatory vs optional content
+Field Readiness requirements
+Campaign-specific learning
+Ordering/prerequisites where required
+
+The developer can use temporary/example content during development and testing.
+
+I will then progressively create, upload and refine the real IMPERIAL learning content through the Admin Portal as the platform and business develop.
+
+Business Empowerment
+The curriculum itself is business-owned configuration.
+
+The developer's responsibility is to build the system that allows IMPERIAL to create, change and manage its learning environment.
+
+IMPERIAL should then be able to continuously evolve its training without requiring software changes or developer intervention every time a lesson, video, quiz, roleplay or curriculum needs to change.
+Core IMPERIAL Training, Campaign-Specific Training, videos, lessons, quizzes, assessments, roleplays, Field Readiness curriculum, ongoing daily learning, etc.
+Forwarded
+## Q7 — Which Parts of the Admin Portal Need to Be Configurable From Day One?
+
+The governing principle is **Business Empowerment**.
+
+Wherever practical, anything IMPERIAL needs to routinely change in order to operate the business should be configurable through the Admin Portal rather than hard-coded or requiring developer intervention.
+
+message.txt
+4 KB
+Teon J. West — 9/4/26, 3:50 PM
+Questions from Teon:
+
+How would you naturally break V1 into development milestones, and what would you want to have fully working and demonstrable at the end of each milestone?
+
+How long do you realistically think each stage would take?
+
+At what points do you think it makes sense for me to test and approve what has been built before we continue?
+Teon J. West — 9/4/26, 4:19 PM
+Good call @Tomoe  let's wrap this up so we can get things kicked off for Monday
+
+I will also have a proposed payment structure also
+Tomoe — 9/4/26, 4:21 PM
+have a great weekend mate! 
+Hope you get some proper rest after all the work this week 😂 
+we’ll get everything wrapped up and ready to kick things off Monday 💪
+Teon J. West — 9/4/26, 4:29 PM
+100%
+You have a great weekend also >:D
+Tomoe — 9/7/26, 7:37 AM
+Hello
+@Teon J. West
+Did you have a great weekend?
+Tomoe
+ started a call that lasted a minute. — 9/7/26, 3:17 PM
+Teon J. West — 9/7/26, 4:42 PM
+Hey Tomoe @Tomoe  I will be active shortly!
+Teon J. West — 9/7/26, 4:42 PM
+I did, thanks mate. What about yourself?
+Tomoe — 9/7/26, 4:44 PM
+hmm not bad
+thank you for asking
+Tomoe — 9/7/26, 8:47 PM
+are you busy this week too? 🙂
+Tomoe — 9/9/26, 9:19 AM
+Hello
+@Teon J. West
+How are you doing?
+Tomoe
+ started a call that lasted a few seconds. — 9/9/26, 9:33 AM
+Teon J. West — 9/9/26, 9:33 AM
+Hey mate thanks for the call!!
+Image
+Tomoe — 9/9/26, 9:33 AM
+Lol
+Teon J. West — 9/9/26, 9:34 AM
+Absolutely mate super busy haha
+Tomoe — 9/9/26, 9:34 AM
+sorry for disturbing you
+Teon J. West — 9/9/26, 9:34 AM
+No don’t be sorry thanks for alerting me
+Tomoe — 9/9/26, 9:36 AM
+what’s your plan from here? 
+you mentioned a payment split and kicking off once we lock milestones
+Happy to send my breakdown first if that’s easier
+Teon J. West — 9/9/26, 9:37 AM
+Let’s catch up in a few hours properly I’m just working
+
+We can go over agreeing on a payment split tonight and go through the milestones etc
+Tomoe — 9/9/26, 9:38 AM
+sounds good mate
+I’ll have the milestone list ready for tonight so we can just agree the split and a start date
+see you soon
+Tomoe — 9/10/26, 7:11 AM
+Hi
+@Teon J. West
+gm
+Tomoe — 9/10/26, 7:12 AM
+I waited for you yesterday 🙂
+Tomoe — 9/10/26, 9:52 AM
+have you thought more about our project?
+seems like really busy
+haha
+make sure to take breaks while you work
+
+Teon J. West — 9/11/26, 7:10 AM
+So sorry about that mate, will make sure to give you a call
+Hope you’ve been well
+Tomoe — 9/11/26, 7:11 AM
+I will wait for you
+Teon J. West — 9/13/26, 1:15 PM
+Hey @Tomoe  I hope you’re well mate
+Teon J. West — 9/13/26, 1:30 PM
+I’ve had a proper think about the development side and the budget after our call
+
+For IMPERIAL OS, I’m comfortable financially with committing £1,000 total towards development
+
+I also think it makes sense for me to use this as an opportunity to learn more of the technical side myself
+
+Like for example with how capable AI development tools are becoming, I want to try building as much of IMPERIAL OS as I realistically can myself with AI while learning to code and understand the architecture properly along the way
+
+That doesn’t mean I don’t want you involved though.  I’d actually still really like you to be part of the project and help me build it properly, particularly where your engineering experience is going to be much more valuable than me trying to figure everything out myself😂
+
+If you’re interested in working with me within the £1,000 total budget, we can figure out the best way to use your time and where you can add the most value
+
+I also completely understand if £1,000 doesn’t make sense for you commercially
+
+There’s genuinely no pressure or hard feelings either way and I respect whatever you decide
+
+I’d rather just be transparent about what I’m willing to invest at this stage and then see if there’s a way of structuring it that works for both of us💪🏿💙
+Tomoe — 9/13/26, 2:37 PM
+Don’t stress the £1k. Money we can sort later
+I’ll take the project and see it through 
+architecture, build, the Associate loop, admin, the lot
+You stay on how the business actually works and we ship V1 properly
+I’m not doing this as a quote. Just tell me when you’re free and we start
+As a friend and a collaborator, I’ll see this through to the end
+You handle the business side, I’ll handle the build
+When you’re free we lock V1 and start 
+Teon J. West — 9/13/26, 6:35 PM
+Mate I appreciate that genuinely 💪🏿💙🔥. it’s nearly midnight here in the UK and I’m up at 5am, so I’m going to get some sleep😂
+
+Let’s officially get started at 7PM UK time
+
+I’ll be back properly around that time and we can lock V1, go through whatever you need from me and start the project, I want us to get started
+
+If there’s anything you want me to have ready for you before then just send it over and I’ll sort it when I’m up 🔥
+
+Really looking forward to getting started mate at last
+Tomoe — 9/13/26, 10:49 PM
+If you can have these ready it saves us time
+one example campaign (sale value + day rate + sale statuses), and how a door-to-sale funnel looks today
+dummy numbers are fine
+I’ll come with the V1 cut and the first build step. See you then
+One practical thing before tonight 
+if you’re still good with the £1k, send it when we start so it’s done and we’re not chasing it later
+Half now / half when foundation is in your hands also works.
+Doesn’t change anything on my side. Just keeps it clean
+Tomoe — 9/14/26, 10:21 AM
+hi
+@Teon J. West
+Tomoe
+ started a call that lasted a few seconds. — 9/14/26, 10:21 AM
+Tomoe — 9/14/26, 10:22 AM
+sorry for the call
+Teon J. West — 9/14/26, 10:22 AM
+I will be active in a few hours it’s nearly 7pm here
+It’s okay I did say to call if you needed
+I will respond to your messages properly soon
+You will be active in a few hours?
+Tomoe — 9/14/26, 10:22 AM
+yes, i'm available at that time
+Tomoe
+ started a call that lasted a few seconds. — 9/15/26, 9:52 AM
+Tomoe
+ started a call that lasted a few seconds. — 9/15/26, 9:53 AM
+Tomoe
+ started a call that lasted a few seconds. — 9/15/26, 10:03 AM
+Tomoe — 9/15/26, 3:14 PM
+you are really busy
+when can we start?
+Tomoe — 9/16/26, 3:25 PM
+hi
+@Teon J. West
+sorry for spam msg
+Tomoe — 9/16/26, 3:57 PM
+I want to know about the progressive form
+Tomoe — 9/18/26, 8:45 AM
+@Teon J. West
+gm
+👋
+don't you have time to answer?
+are you feeling unwell?
+please let me know when you plan to start
+
+Tomoe — 9/29/26, 12:33 PM
+but no worries about payment
+i'm okay
+i will start our project in 3days
+i'm very busy these days
+sorry
+Teon J. West — 9/29/26, 12:34 PM
+Is there anything you will need from me?  Any more information?
+Teon J. West — 9/29/26, 12:34 PM
+Haha it’s nice to hear you have other projects and stuff now
+Tomoe — 9/29/26, 12:35 PM
+i will let you know soon
+Teon J. West — 9/29/26, 12:35 PM
+Maybe I should learn to code and then once I know I can vibe code and then use my coding knowledge to fix things and we can do it together?
+
+I don’t want you to do it all alone
+What you think
+Tomoe — 9/29/26, 12:37 PM
+Haha,
+that's a good idea,
+but it's okay
+I can do it on my own
+Teon J. West — 9/29/26, 12:37 PM
+Are you sure?
+Tomoe — 9/29/26, 12:37 PM
+But I agree with you learning to code
+You can put it to use anytime
+Teon J. West — 9/29/26, 12:37 PM
+I don’t want the workload to be too much or the pressure
+Tomoe — 9/29/26, 12:37 PM
+no worries, bro
+i think this project is the long term project
+Teon J. West — 9/29/26, 12:39 PM
+Yes absolutely!
+Tomoe — 9/29/26, 12:39 PM
+AI has also advanced these days, so i can use it together with that
+so np
+Teon J. West — 9/29/26, 12:41 PM
+Amazing
+I mean you have the blueprint & dev spec I think you have everything
+If there’s any extra info you need let me know okay
+Tomoe — 9/29/26, 12:47 PM
+yeah
+but i want your quick reply always
+haha
+Teon J. West — 9/29/26, 12:47 PM
+Sorry sorry I will try🥲
+Tomoe — 9/29/26, 7:47 PM
+Hello
+@Teon J. West
+I plan to use cursor to speed up development and increase efficiency
+I would like you to purchase this
+https://cursor.com/
+Cursor
+AI Coding Agent for Building Ambitious Software | Cursor
+Built to make you extraordinarily productive, agents turn ideas into code. Accelerate development by handing off tasks to Cursor.
+AI Coding Agent for Building Ambitious Software | Cursor
+you can check
+Teon J. West — 9/29/26, 7:51 PM
+Which package would be best? @Tomoe
+I will pay for it on Thursday also is that fine?
+So about 24 hours from now
+Tomoe — 9/29/26, 7:52 PM
+okay, np
+that's fine
+Teon J. West — 9/29/26, 7:53 PM
+Just let me know which package would be best
+Tomoe — 9/29/26, 8:07 PM
+for now 20$ is okay
+
+Tomoe — 9/30/26, 3:11 PM
+hello
+@Teon J. West
+Teon J. West — 9/30/26, 5:05 PM
+Hello @Tomoe
+🤣
+Tomoe — 9/30/26, 9:00 PM
+hi
+there?
+Tomoe — 10/1/26, 11:41 AM
+don't purchase the cursor yet
+@Teon J. West
+Tomoe — 10/1/26, 3:15 PM
+@Teon J. West
+Teon J. West — 10/1/26, 3:15 PM
+Hellooo
+I haven’t got it yet
+Tomoe — 10/1/26, 3:15 PM
+good
+no need to buy cursor
+Teon J. West — 10/1/26, 3:40 PM
+Why?
+Tomoe — 10/1/26, 3:41 PM
+I mean i don't need it yet
+if i need it i will let you know 
+so is your business going well?
+Teon J. West — 10/4/26, 3:27 PM
+Its going okay at the moment @Tomoe  what about yourself?
+How’s life?
+Tomoe — 10/4/26, 7:59 PM
+To be honest, I’ve been really busy lately
+My grandmother was hospitalized recently after an accident😭 
+She was the one who adored me the most, and she was the one who raised me
+I’m currently swamped trying to cover her hospital bills
+That’s why I haven’t been able to start your project in earnest yet
+But don’t worry
+I’ll get properly started on it sometime next week.
+Right now, I’m looking for a project that can generate significant profit quickly
+you remember when I asked about Freelancer or Fiverr, right?
+Similarly, my friends are generating significant profits by collaborating with their European counterparts
+they are currently earning over $50 an hour doing AI training data work
+The only catch is that such high hourly rates seem to apply only to accounts based in English-speaking countries like the US or the UK
+I’m really grateful that you helped me set up my freelancer account back then
+If it’s not too much trouble, could I get your help to try doing some AI training work using that account?
+It’s a really busy time for me lately, so I’m trying out all sorts of things
+Tomoe — 10/4/26, 8:07 PM
+so please understand me

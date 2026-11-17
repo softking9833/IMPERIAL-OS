@@ -1,0 +1,25 @@
+{
+  "name": "imperial-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IMPERIAL OS — shared backend with mobile execution and web administration",
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @imperial/api & npm run dev -w @imperial/web",
+    "dev:api": "npm run dev -w @imperial/api",
+    "dev:web": "npm run dev -w @imperial/web",
+    "dev:mobile": "npm --prefix apps/mobile run dev",
+    "build": "npm run build -w @imperial/shared && npm run build -w @imperial/api && npm run build -w @imperial/web",
+    "db:generate": "npm run db:generate -w @imperial/api",
+    "db:migrate": "npm run db:migrate -w @imperial/api",
+    "db:seed": "npm run db:seed -w @imperial/api",
+    "db:reset": "npm run db:reset -w @imperial/api"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

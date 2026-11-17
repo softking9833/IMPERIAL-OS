@@ -1,0 +1,345 @@
+IMPERIAL OS — CURRENT UI DESIGN & EXPRESSION GUIDE
+==================================================
+Purpose: reference for redesign. Describes what exists today (V1), how business
+logic is shown on screen, and the visual language already in use.
+
+Surfaces
+--------
+1) Web Admin Portal (Next.js) — leadership / ops / config
+2) Mobile app (Expo) — associate daily work
+
+Both share one dark “imperial green-black + gold” look and the same backend.
+
+
+1. BRAND PERSONALITY (how it feels now)
+--------------------------------------
+Tone: serious field sales ops, not playful consumer app.
+Visual idea: dark command center with gold authority accents.
+Brand name “IMPERIAL OS” is always gold / accent-strong, often with a crown mark
+on web sidebar.
+Atmosphere: deep near-black green backgrounds, soft gold radial glow on web
+body, thin gold borders, rounded panels.
+Language on screen is operational: Field Ready, Deploy, Predicted vs Actual,
+Awaiting Review, End of Day — not marketing fluff.
+
+
+2. COLOR SYSTEM (shared tokens)
+-------------------------------
+Web CSS variables (apps/web/src/app/globals.css)
+Mobile mirror (apps/mobile/lib/theme.ts)
+
+Background deep:     #0F1412 (web page) / #0C100E (mobile + sidebar feel)
+Elevated / card:     #171E1B
+Soft fill:           #1F2924
+Border:              #2C3A33
+Text primary:        #EEF3EF
+Text muted:          #9AABA7
+Accent gold:         #C4A35A
+Accent gold strong:  #DFC07A
+Success green:       #3D9A6A
+Danger red:          #C45B5B
+Info blue:           #5B8FC4 (web token; rarely used)
+
+Meaning in UI:
+- Gold = brand, primary actions, active nav, money emphasis, MD authority
+- Green = approved / profitable / success messages
+- Red / soft red panel = errors, unprofitable, destructive tone
+- Muted gray-green = secondary labels, helper text, inactive nav
+
+
+3. TYPOGRAPHY
+-------------
+Web fonts: Segoe UI / Helvetica Neue / sans-serif for both display and body.
+No custom display font yet.
+Page title (topbar h1): ~1.75rem, weight ~650
+Panel titles (h2): ~1.1rem
+Stat card labels (h3): ~0.9rem muted
+Big numbers (.value): ~1.8rem bold
+Nav group labels: tiny uppercase, wide letter-spacing
+Brand wordmark: uppercase spacing feel (letter-spacing ~0.14em), gold
+
+Mobile: system default RN text; titles use accentStrong gold in headers.
+
+
+4. SHAPE, SPACE, MOTION
+-----------------------
+Radius: cards/panels 14px; buttons/inputs ~10px; pills/sign-out 999px
+Spacing: main content padding 32px desktop / 20px narrow; stacks gap ~16px
+Borders: 1px solid border or translucent gold (sidebar edge)
+Active nav shadow: soft gold drop (web only)
+Motion: almost none — only short hover/active color transitions on nav (~0.15s)
+No illustration system, no photography, no empty-state art
+
+
+5. WEB LAYOUT STRUCTURE
+-----------------------
+Shell = left sidebar (272px) + main content.
+
+Sidebar (top → bottom):
+- Corner gold L ornaments (decorative)
+- Brand block: crown + IMPERIAL OS + “Admin Portal · Milestone 5”
+- Nav groups
+- Footer identity: avatar initial circle, name, ROLE in caps, scope line
+- Full-width outline Sign out pill
+
+Nav information architecture (same for all logged-in roles today):
+- Home (ungrouped)
+- Manage: Overview, People, Campaigns, Admin Config
+- Operate: Learn, Roleplay, Field, Performance, Profile
+- Lifecycle: Field Readiness, Associate Loop
+
+Active link: gold gradient fill, white text, gold border glow.
+Inactive: muted text; hover slightly lifts contrast.
+
+Main column:
+- Topbar: page title + one-line subtitle explaining the business purpose
+- Then page body using panels / cards / forms / tables
+
+Responsive: under 900px sidebar stacks above content (still functional, not
+polished mobile web).
+
+
+6. WEB UI BUILDING BLOCKS (how things are drawn)
+------------------------------------------------
+Panel (.panel)
+  Dark elevated box. Section container with h2 title. Used for “forms + lists
+  of related work”.
+
+Card (.card)
+  Same visual family as panel, often smaller. Used for KPI tiles, list rows,
+  callout blocks. Primary-action Home card gets a stronger gold border.
+
+Stats grid (.grid.stats)
+  Auto-fit min 160px columns. Each tile = muted label + large value number.
+  This is the main “at a glance” pattern for Performance / Home / Profile.
+
+Table (.table)
+  Simple bordered rows, muted headers. Used for People list, Performance
+  associates, Admin rules. Dense ops style.
+
+Badge (.badge)
+  Pill. Default soft fill. Variants: ok (green), warn (gold). Used for
+  PROFITABLE / status chips / curriculum kind.
+
+Buttons
+  .btn — secondary dark soft
+  .btn.primary — gold gradient, dark text (main CTA)
+  .btn.danger — red tint
+  .btn-signout — outline gold pill in sidebar
+
+Forms
+  Label above control, muted small label text.
+  Inputs/selects: dark fill, border, 10px radius.
+  Often .form.row = multi-column auto-fit for create/edit.
+
+Feedback
+  .error = soft red banner
+  Success often = card with green-tinted border + short sentence
+  .muted = helper / empty states (“No sales”, “No active deployment”)
+
+Login
+  Centered login-card, brand title gold, demo credentials listed under form.
+  After login → /dashboard.
+
+
+7. HOW BUSINESS LOGIC IS EXPRESSED ON WEB SCREENS
+-------------------------------------------------
+Home
+  Logic: “what should I do next?”
+  UI: greeting + role/lifecycle/deployment line; one Primary action card
+  (title, detail, Go button); KPI strip (Field Ready, doors today, sales,
+  callbacks); optional performance snapshot.
+  Expression rule: one clear next action, not a dashboard dump in the hero.
+
+Overview (/dashboard)
+  High-level org snapshot for MD-style ops (counts / status summary style).
+
+People
+  Logic: MD creates identities and assigns roles.
+  UI: create form (name, email, password, role) + table of users with
+  readiness / lifecycle / deployment columns.
+
+Campaigns
+  Logic: create campaigns, deploy people to territories.
+  UI: campaign forms + deployment actions. Deployment is how Field unlocks.
+
+Admin Config
+  Logic: Business Empowerment — change rules without code.
+  UI: tab strip (Curriculum / Commercials / KPI·Funnel / Day rates /
+  Business rules). Each tab = config forms that save to API.
+  How to express changes:
+  - Day rate → money cost per associate (pence input, show £)
+  - Sale value → campaign revenue unit (pence, show £)
+  - Curriculum → lists of lessons/requirements
+  - KPI targets → numbers that coach daily goals
+  - Rules → key / description / JSON value table + simple editors
+
+Learn
+  Logic: curriculum consumption + MD can create lessons.
+  UI: lesson list, detail, complete / quiz submit; create form for MD.
+  Status expressed as completed vs not via messages and list state.
+
+Roleplay
+  Logic: practise → submit → leader review.
+  UI branches by role (session role):
+  - Associate/Junior: requirements + draft textarea + Submit; shows latest
+    status text (APPROVED / AWAITING_REVIEW / RETURNED) and feedback
+  - MD: review queue with Approve / Return
+  Expression: status words are uppercase system states; feedback is plain
+  sentence under the item.
+
+Field (web)
+  Logic: same field day capture as mobile, for browser.
+  UI: deployment context, doors/conversations inputs, sale/callback/EOD
+  actions. Should always show campaign context so user knows “where they are
+  working”.
+
+Performance
+  Logic: KPIs + Predicted vs Actual profit.
+  UI:
+  - Stat tiles for doors / convos / sales / profits
+  - MD: associates table with predicted/actual badges and Mark PAID on sales
+  - Non-MD: personal profitability breakdown (revenue, cost, profit)
+  Expression rules:
+  - Predicted = sales recorded
+  - Actual = sales in realised status (usually PAID)
+  - Cost = day rate × worked field days
+  - PROFITABLE / UNPROFITABLE badges
+
+Profile
+  Logic: one identity — role, scope, readiness, timeline, deployments.
+  UI: identity header, edit name, active deployment, career timeline cards,
+  performance snapshot, recent roleplays.
+
+Field Readiness
+  Logic: gate before field work; MD approval.
+  UI: queue / checklist style for readiness items + approve action for MD.
+
+Associate Loop
+  Logic: end-to-end readiness → field preview for current user.
+  UI: readiness + today’s field capture in one place.
+
+
+8. MOBILE LAYOUT STRUCTURE
+--------------------------
+Bottom tabs (5):
+  Home | Field | Learn | Perf | More
+
+Tab bar: near-black, gold top border tint, gold active icons/labels, muted
+inactive. Ionicons outline vs filled for focus.
+
+Header: dark bg, gold title text.
+
+More tab combines Profile summary + Roleplay list + Sign out (no separate
+Roleplay tab).
+
+Screens are ScrollView stacks of dark cards, gold primary Pressables, muted
+labels, large KPI numbers — visual twin of web cards but denser for phone.
+
+
+9. HOW BUSINESS LOGIC IS EXPRESSED ON MOBILE
+--------------------------------------------
+Home
+  Same idea as web: next best action + short context.
+
+Field (core associate tool)
+  Shows deployment (campaign / territory).
+  Offline banner / simulate offline / pending sync count / Sync now.
+  Activity inputs (doors, conversations, notes).
+  Record sale button includes live sale value: “Record sale (£X.XX)”.
+  Callbacks + End of Day form.
+  Expression rule: always show online/offline truth; queued actions must look
+  local-until-synced, not silently lost.
+
+Learn
+  Lesson list → open → complete or quiz. Simple success/fail messages.
+
+Perf
+  Six compact stats: Doors, Convos, Sales, Door→Conv %, Conv→Sale %, Day rate.
+  Two big money cards: Predicted and Actual/Realised with revenue/cost/status.
+  This is where day rate + sale economics become visible to the associate.
+
+More
+  Identity strip: ROLE · lifecycle; Field Ready; Day rate; Deployment line.
+  Roleplay cards with brief, latest status, script box, Submit for review.
+  Sign out.
+
+
+10. STATUS & LANGUAGE PATTERNS (keep consistent when redesigning)
+-----------------------------------------------------------------
+Roles shown humanized with spaces: MANAGING_DIRECTOR → “MANAGING DIRECTOR”.
+Lifecycle / readiness often raw-ish: FIELD_READY.
+Sale statuses: recorded → later PAID for actual profit.
+Roleplay statuses: AWAITING_REVIEW, APPROVED, RETURNED.
+Money always £ with two decimals; stored as pence in forms (10000 = £100.00).
+Empty states are one muted sentence, not illustrations.
+Errors are short and actionable.
+
+
+11. CURRENT UX LOGIC RULES (product → UI)
+-----------------------------------------
+Direction first: Home should answer “what next?” before charts.
+Role stickiness: UI must reflect the logged-in session; pages must not silently
+switch demo users (bug that was fixed).
+MD vs Associate difference is mostly data + available actions, not a totally
+different visual theme. Same shell; different queues/buttons.
+Field data feeds Performance. If Field empty, Perf looks empty — that is
+correct, not a UI bug.
+Admin Config changes should become visible on Field sale button, day rate
+lines, Learn lists, and profit math — that is how “Business Empowerment”
+proves itself.
+
+
+12. WHAT THE CURRENT UI IS GOOD / WEAK AT (for redesign)
+-------------------------------------------------------
+Strengths
+- Clear dark + gold brand identity already established
+- Consistent card/panel language across web and mobile
+- Operational labels match real field-sales workflow
+- Sidebar identity makes role visible at all times
+
+Weaknesses / redesign opportunities
+- Fonts are default system stacks (not distinctive)
+- Milestone label in sidebar (“Milestone 5”) is internal, not product polish
+- Heavy use of generic cards/panels everywhere; little hierarchy beyond gold CTA
+- Almost no motion or micro-interaction beyond nav active state
+- Forms are dense and admin-tool like (fine for V1, cold for client demo)
+- Role-based nav not filtered — Juniors can see MD menu items even if API blocks
+- Mobile More is a catch-all (profile + roleplay + logout)
+- Empty/success states are text-only
+- Web responsive sidebar is basic
+- Login shows demo passwords on screen (dev convenience)
+
+
+13. FILE MAP (where UI lives)
+-----------------------------
+Web global styles: apps/web/src/app/globals.css
+Web shell/nav:     apps/web/src/components/AppShell.tsx
+Web pages:         apps/web/src/app/*/page.tsx
+Mobile theme:      apps/mobile/lib/theme.ts
+Mobile tabs:       apps/mobile/app/(tabs)/_layout.tsx
+Mobile screens:    apps/mobile/app/(tabs)/*.tsx
+
+
+14. REDESIGN GUIDANCE (how to express the same logic better)
+------------------------------------------------------------
+Keep the business objects and status words; improve composition and hierarchy.
+
+Prioritize:
+1) Stronger brand presence on first viewport (especially login + Home)
+2) Clearer primary action vs secondary noise
+3) Role-appropriate navigation (hide what the role cannot use)
+4) Richer status expression (Approved / Awaiting / Profitable) without clutter
+5) Field day as a guided sequence on mobile (activity → sale → callback → EOD)
+6) Performance as a story: cost vs revenue, not only number tiles
+7) Shared design tokens + typography between web and mobile
+
+Do not change meaning of:
+- Day rate (cost, not salary UI)
+- Predicted vs Actual
+- Field Ready gate
+- Roleplay review loop
+- Offline queue honesty on Field
+
+
+END OF DOCUMENT

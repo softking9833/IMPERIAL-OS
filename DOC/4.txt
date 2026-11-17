@@ -1,0 +1,141 @@
+## Q4 — The V1 Roles and What Each Role Needs to View, Act and Approve
+
+### V1 Roles
+
+The operational roles required for Version 1 are:
+
+* Junior Associate
+* Associate
+* Managing Director
+
+Senior Associate, Area Sales Manager and Regional Sales Manager are part of the future organisational structure, but they do not need fully built management experiences in V1 because those positions will not physically exist at launch.
+
+However, the underlying Identity, Permissions, Perspective and Scope architecture must support introducing these roles later without requiring architectural redesign.
+
+### Junior Associate
+
+**View**
+
+A Junior Associate should be able to view their own:
+
+* Home and daily priorities
+* Learning and curriculum requirements
+* Roleplay requirements and submissions
+* Field Readiness status
+* Active Campaign
+* Assigned Territory
+* Field activity
+* Callbacks
+* Performance and KPIs
+* Predicted and Actual/Realised Profitability
+* Profile and relevant progression information
+
+**Act**
+
+A Junior Associate should be able to:
+
+* Complete learning, quizzes and assessments
+* Submit roleplays
+* Complete Field activity
+* Record doors and KPI inputs
+* Record sales
+* Create and manage their callbacks
+* Complete required daily reporting/actions
+* Update permitted personal/account information
+
+**Approve**
+
+Junior Associates have no organisational approval authority in V1.
+
+### Associate
+
+For V1, the Associate's core permissions can remain substantially similar to those of a Junior Associate.
+
+**View**
+
+Associates can view their own operational, learning, Field, Performance, profitability and Profile information.
+
+**Act**
+
+Associates can complete their own learning, roleplay, Field activity, KPI recording, callbacks, sales and reporting.
+
+**Approve**
+
+Associates have no organisational approval authority by default in V1.
+
+The distinction between Junior Associate and Associate should initially come primarily through role/status, curriculum, expectations, targets, commercial/day-rate configuration and progression requirements rather than creating unnecessary permission differences.
+
+The architecture should allow additional coaching or leadership permissions to be introduced later as Associates progress into leadership responsibilities.
+
+### Managing Director
+
+The Managing Director is the primary management and administrative role for V1.
+
+**View**
+
+The Managing Director should have authorised company-wide visibility across:
+
+* Users and Associates
+* Performance and KPIs
+* Predicted and Actual/Realised Profitability
+* Field activity
+* Sales and sale statuses
+* Campaigns
+* Territories and deployments
+* Learning progress
+* Roleplay submissions
+* Field Readiness
+* Relevant organisational and administrative information
+
+The Managing Director's default Perspective should be **Managing Director** and default Scope should be **the entire IMPERIAL organisation**.
+
+**Act**
+
+The Managing Director should be able to:
+
+* Create and manage users
+* Assign roles
+* Assign campaigns
+* Assign territories and deployments
+* Build and manage learning curricula
+* Create lessons, videos, quizzes and assessments
+* Create and manage roleplay requirements
+* Update sale processing/status information
+* Configure campaign commercials
+* Configure Associate day rates
+* Configure relevant business rules
+* Configure Field Readiness requirements
+* Manage the operational configuration required to run IMPERIAL
+
+**Approve**
+
+The Managing Director should be able to approve:
+
+* Field Readiness
+* Roleplays and assessments requiring human approval
+* Manual or exceptional lifecycle progression where required
+* Other explicitly defined V1 approval workflows
+
+Approvals should be auditable, including who approved the action, what was approved, when it occurred and any relevant decision or feedback.
+
+### Business Empowerment
+
+Business Empowerment is a core requirement.
+
+Wherever practical, authorised administrators must be able to create, configure and manage IMPERIAL's business operations through the Admin Portal without requiring developer intervention.
+
+The developer should build the systems and configuration tools; IMPERIAL should control the business rules and operational content within those systems.
+
+### Future Roles, Perspective & Scope
+
+Although Senior Associate, Area Sales Manager and Regional Sales Manager do not require complete V1 experiences, the platform must be architected to support them later.
+
+**Perspective** defines how a user is viewing/operating within IMPERIAL.
+
+**Scope** defines which part of the organisation they are viewing.
+
+These concepts must remain separate.
+
+The Managing Director should retain one permanent identity while being capable of accessing other authorised Perspectives and Scopes as the organisation develops.
+
+The objective is to build only the roles IMPERIAL actually needs operationally in V1 while ensuring future management layers can be introduced without rebuilding the underlying platform.
