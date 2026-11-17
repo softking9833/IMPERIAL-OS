@@ -110,7 +110,7 @@ function NavIcon({ name }: { name: string }) {
       return (
         <svg {...common}>
           <circle cx="12" cy="12" r="3" />
-          <path d="M12 3.5v2.2M12 18.3v2.2M4.9 6.4l1.6 1.6M17.5 16l1.6 1.6M3.5 12h2.2M18.3 12h2.2M4.9 17.6l1.6-1.6M17.5 8l1.6-1.6" />
+          <path d="M12 3.5v2.2M12 18.3v2.2M3.5 12h2.2M18.3 12h2.2M4.9 6.4l1.6 1.6M17.5 8l1.6-1.6M4.9 17.6l1.6-1.6M17.5 16l1.6 1.6" />
         </svg>
       );
     case "learn":

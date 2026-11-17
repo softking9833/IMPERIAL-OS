@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AppShell } from "@/components/AppShell";
 import { api } from "@/lib/api";
@@ -131,7 +130,6 @@ export default function DashboardPage() {
         <section className="overview-audit panel">
           <div className="actions-head">
             <h2>Recent audit activity</h2>
-            <Link href="/dashboard">View all →</Link>
           </div>
           <table className="table overview-audit-table">
             <thead>
