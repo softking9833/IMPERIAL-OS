@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
 export const campaignsRouter = Router();
@@ -92,7 +93,7 @@ campaignsRouter.post(
     }
 
     const campaign = await prisma.campaign.findUnique({
-      where: { id: req.params.campaignId },
+      where: { id: param(req.params.campaignId) },
     });
     if (!campaign) {
       return res.status(404).json({ error: "Campaign not found" });

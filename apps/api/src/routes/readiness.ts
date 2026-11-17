@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
 export const readinessRouter = Router();
@@ -49,7 +50,7 @@ readinessRouter.post("/me/:progressId/complete", async (req: AuthedRequest, res)
   if (!req.user) return res.status(401).json({ error: "Authentication required" });
 
   const progress = await prisma.requirementProgress.findFirst({
-    where: { id: req.params.progressId, userId: req.user.id },
+    where: { id: param(req.params.progressId), userId: req.user.id },
   });
   if (!progress) {
     return res.status(404).json({ error: "Requirement not found" });
@@ -110,7 +111,7 @@ readinessRouter.post(
       return res.status(400).json({ error: "Invalid approval payload" });
     }
 
-    const subject = await prisma.user.findUnique({ where: { id: req.params.userId } });
+    const subject = await prisma.user.findUnique({ where: { id: param(req.params.userId) } });
     if (!subject) {
       return res.status(404).json({ error: "User not found" });
     }

@@ -3,6 +3,7 @@ import { z } from "zod";
 import { SALE_STATUSES } from "@imperial/shared";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { buildPerformanceSummary } from "../lib/performance.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
@@ -19,7 +20,7 @@ performanceRouter.get(
   "/users/:userId",
   requireRoles("MANAGING_DIRECTOR"),
   async (req, res) => {
-    const user = await prisma.user.findUnique({ where: { id: req.params.userId } });
+    const user = await prisma.user.findUnique({ where: { id: param(req.params.userId) } });
     if (!user) return res.status(404).json({ error: "User not found" });
     const summary = await buildPerformanceSummary(user.id);
     return res.json({ performance: summary });
@@ -86,7 +87,7 @@ performanceRouter.patch(
       return res.status(400).json({ error: "Invalid sale status" });
     }
 
-    const sale = await prisma.sale.findUnique({ where: { id: req.params.saleId } });
+    const sale = await prisma.sale.findUnique({ where: { id: param(req.params.saleId) } });
     if (!sale) return res.status(404).json({ error: "Sale not found" });
 
     const updated = await prisma.sale.update({

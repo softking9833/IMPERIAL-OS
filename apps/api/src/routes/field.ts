@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, type AuthedRequest } from "../middleware/auth.js";
 
 export const fieldRouter = Router();
@@ -130,7 +131,7 @@ fieldRouter.patch("/callbacks/:id", async (req: AuthedRequest, res) => {
   const existing = await prisma.callback.findFirst({
     where: {
       userId: req.user.id,
-      OR: [{ id: req.params.id }, { clientRef: req.params.id }],
+      OR: [{ id: param(req.params.id) }, { clientRef: param(req.params.id) }],
     },
   });
   if (!existing) return res.status(404).json({ error: "Callback not found" });

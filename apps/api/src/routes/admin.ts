@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
 export const adminRouter = Router();
@@ -163,7 +164,7 @@ adminRouter.post("/curricula/:id/lessons", async (req: AuthedRequest, res) => {
   }
 
   const curriculum = await prisma.curriculum.findUnique({
-    where: { id: req.params.id },
+    where: { id: param(req.params.id) },
   });
   if (!curriculum) return res.status(404).json({ error: "Curriculum not found" });
 
@@ -219,7 +220,7 @@ adminRouter.patch("/campaigns/:id/commercials", async (req: AuthedRequest, res) 
     return res.status(400).json({ error: "Invalid commercials payload" });
   }
 
-  const existing = await prisma.campaign.findUnique({ where: { id: req.params.id } });
+  const existing = await prisma.campaign.findUnique({ where: { id: param(req.params.id) } });
   if (!existing) return res.status(404).json({ error: "Campaign not found" });
 
   const campaign = await prisma.campaign.update({
@@ -258,7 +259,7 @@ adminRouter.put("/campaigns/:id/funnel", async (req: AuthedRequest, res) => {
     return res.status(400).json({ error: "Invalid funnel payload" });
   }
 
-  const campaign = await prisma.campaign.findUnique({ where: { id: req.params.id } });
+  const campaign = await prisma.campaign.findUnique({ where: { id: param(req.params.id) } });
   if (!campaign) return res.status(404).json({ error: "Campaign not found" });
 
   await prisma.funnelStage.deleteMany({ where: { campaignId: campaign.id } });
@@ -298,7 +299,7 @@ adminRouter.post("/associates/:userId/day-rate", async (req: AuthedRequest, res)
     return res.status(400).json({ error: "Invalid day rate payload" });
   }
 
-  const user = await prisma.user.findUnique({ where: { id: req.params.userId } });
+  const user = await prisma.user.findUnique({ where: { id: param(req.params.userId) } });
   if (!user) return res.status(404).json({ error: "User not found" });
 
   const effectiveFrom = parsed.data.effectiveFrom
@@ -344,16 +345,17 @@ adminRouter.put("/business-rules/:key", async (req: AuthedRequest, res) => {
   }
 
   const org = await prisma.organisation.findFirstOrThrow();
+  const key = param(req.params.key);
   const rule = await prisma.businessRule.upsert({
     where: {
       organisationId_key: {
         organisationId: org.id,
-        key: req.params.key,
+        key,
       },
     },
     create: {
       organisationId: org.id,
-      key: req.params.key,
+      key,
       valueJson: JSON.stringify(parsed.data.value),
       description: parsed.data.description,
     },

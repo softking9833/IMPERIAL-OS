@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
 export const roleplayRouter = Router();
@@ -116,7 +117,7 @@ roleplayRouter.post(
     }
 
     const existing = await prisma.roleplaySubmission.findUnique({
-      where: { id: req.params.submissionId },
+      where: { id: param(req.params.submissionId) },
     });
     if (!existing) {
       return res.status(404).json({ error: "Submission not found" });

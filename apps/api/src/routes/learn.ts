@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { prisma } from "../lib/prisma.js";
 import { writeAudit } from "../lib/audit.js";
+import { param } from "../lib/params.js";
 import { requireAuth, requireRoles, type AuthedRequest } from "../middleware/auth.js";
 
 export const learnRouter = Router();
@@ -74,7 +75,7 @@ learnRouter.get("/lessons", async (req: AuthedRequest, res) => {
 learnRouter.post("/lessons/:lessonId/complete", async (req: AuthedRequest, res) => {
   if (!req.user) return res.status(401).json({ error: "Authentication required" });
 
-  const lesson = await prisma.lesson.findUnique({ where: { id: req.params.lessonId } });
+  const lesson = await prisma.lesson.findUnique({ where: { id: param(req.params.lessonId) } });
   if (!lesson || !lesson.isPublished) {
     return res.status(404).json({ error: "Lesson not found" });
   }
@@ -128,7 +129,7 @@ learnRouter.post("/lessons/:lessonId/quiz", async (req: AuthedRequest, res) => {
     return res.status(400).json({ error: "Invalid quiz payload" });
   }
 
-  const lesson = await prisma.lesson.findUnique({ where: { id: req.params.lessonId } });
+  const lesson = await prisma.lesson.findUnique({ where: { id: param(req.params.lessonId) } });
   if (!lesson || !lesson.isPublished) {
     return res.status(404).json({ error: "Lesson not found" });
   }
