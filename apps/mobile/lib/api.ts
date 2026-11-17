@@ -22,11 +22,22 @@ type LoginResponse = {
 
 const TOKEN_KEY = "imperial_token";
 
+/** Live API used by release APKs (no Expo Go / no localhost). */
+export const PRODUCTION_API_URL =
+  "https://imperial-os-production.up.railway.app";
+
 function defaultApiUrl() {
-  if (process.env.EXPO_PUBLIC_API_URL) return process.env.EXPO_PUBLIC_API_URL;
-  // Android emulator cannot use localhost for host machine services.
-  if (Platform.OS === "android") return "http://10.0.2.2:4000";
-  return "http://localhost:4000";
+  const fromEnv = process.env.EXPO_PUBLIC_API_URL?.trim();
+  if (fromEnv) return fromEnv.replace(/\/$/, "");
+
+  // Dev only: talk to a machine-local API.
+  if (typeof __DEV__ !== "undefined" && __DEV__) {
+    if (Platform.OS === "android") return "http://10.0.2.2:4000";
+    return "http://localhost:4000";
+  }
+
+  // Release APK / production builds always hit the hosted API.
+  return PRODUCTION_API_URL;
 }
 
 export const API_URL = defaultApiUrl();

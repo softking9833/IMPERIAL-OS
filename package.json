@@ -13,6 +13,7 @@
     "dev:api": "npm run dev -w @imperial/api",
     "dev:web": "npm run dev -w @imperial/web",
     "dev:mobile": "npm --prefix apps/mobile run dev",
+    "build:apk": "npm --prefix apps/mobile run build:apk",
     "build": "npm run build -w @imperial/shared && npm run build -w @imperial/api && npm run build -w @imperial/web",
     "build:web": "npm run build -w @imperial/shared && npm run build -w @imperial/web",
     "build:api": "npm run build -w @imperial/shared && npm run db:generate -w @imperial/api && npm run build -w @imperial/api",
