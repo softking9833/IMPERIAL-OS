@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "node",
+  "steps": {
+    "build": {
+      "commands": ["npm run build:api"]
+    }
+  },
+  "deploy": {
+    "startCommand": "cd apps/api && npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"
+  }
+}

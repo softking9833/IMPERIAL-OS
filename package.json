@@ -16,6 +16,7 @@
     "build": "npm run build -w @imperial/shared && npm run build -w @imperial/api && npm run build -w @imperial/web",
     "build:web": "npm run build -w @imperial/shared && npm run build -w @imperial/web",
     "build:api": "npm run build -w @imperial/shared && npm run db:generate -w @imperial/api && npm run build -w @imperial/api",
+    "start": "cd apps/api && npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js",
     "start:api": "npm run start -w @imperial/api",
     "db:generate": "npm run db:generate -w @imperial/api",
     "db:migrate": "npm run db:migrate -w @imperial/api",
