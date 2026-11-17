@@ -44,7 +44,6 @@ const navGroups: Array<{ label: string | null; links: NavLink[] }> = [
     label: "Lifecycle",
     links: [
       { href: "/readiness", label: "Field Readiness", icon: "readiness", roles: MD },
-      { href: "/associate", label: "Associate Loop", icon: "loop", roles: MD },
     ],
   },
 ];
@@ -363,28 +362,7 @@ export function AppShell({
             {subtitle ? <p>{subtitle}</p> : null}
           </div>
           <div className="topbar-meta">
-            <div className="system-pill">
-              <span className="system-dot" aria-hidden />
-              System Online
-            </div>
             <span className="topbar-date">{todayLabel}</span>
-            <div className="topbar-bell" aria-label="Notifications" title="Notifications">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
-                <path
-                  d="M6 9a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9"
-                  stroke="currentColor"
-                  strokeWidth="1.7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M10 20a2 2 0 0 0 4 0"
-                  stroke="currentColor"
-                  strokeWidth="1.7"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div>
           </div>
         </div>
         {children}

@@ -14,12 +14,13 @@ import { colors, gbp } from "@/lib/theme";
 
 type HomeData = Awaited<ReturnType<typeof api.home>>["home"];
 
-function mapHref(href: string) {
+function mapHref(href: string): string | null {
   if (href.includes("field")) return "/(tabs)/field";
   if (href.includes("learn")) return "/(tabs)/learn";
   if (href.includes("performance")) return "/(tabs)/performance";
   if (href.includes("roleplay") || href.includes("profile")) return "/(tabs)/more";
-  return "/(tabs)/home";
+  // Web-only admin routes have no mobile destination — hide those actions.
+  return null;
 }
 
 export default function HomeScreen() {
@@ -75,14 +76,17 @@ export default function HomeScreen() {
               : ""}
           </Text>
 
-          {home.primaryAction ? (
+          {home.primaryAction && mapHref(home.primaryAction.href) ? (
             <View style={[styles.card, styles.primaryCard]}>
               <Text style={styles.cardLabel}>Primary action</Text>
               <Text style={styles.cardTitle}>{home.primaryAction.title}</Text>
               <Text style={styles.muted}>{home.primaryAction.detail}</Text>
               <Pressable
                 style={styles.button}
-                onPress={() => router.push(mapHref(home.primaryAction!.href))}
+                onPress={() => {
+                  const target = mapHref(home.primaryAction!.href);
+                  if (target) router.push(target);
+                }}
               >
                 <Text style={styles.buttonText}>Go</Text>
               </Pressable>
@@ -117,16 +121,21 @@ export default function HomeScreen() {
           ) : null}
 
           <Text style={styles.section}>Today&apos;s actions</Text>
-          {home.actions.map((action) => (
-            <Pressable
-              key={action.code}
-              style={styles.card}
-              onPress={() => router.push(mapHref(action.href))}
-            >
-              <Text style={styles.cardTitle}>{action.title}</Text>
-              <Text style={styles.muted}>{action.detail}</Text>
-            </Pressable>
-          ))}
+          {home.actions
+            .filter((action) => mapHref(action.href))
+            .map((action) => (
+              <Pressable
+                key={action.code}
+                style={styles.card}
+                onPress={() => {
+                  const target = mapHref(action.href);
+                  if (target) router.push(target);
+                }}
+              >
+                <Text style={styles.cardTitle}>{action.title}</Text>
+                <Text style={styles.muted}>{action.detail}</Text>
+              </Pressable>
+            ))}
 
           <Pressable style={styles.signOut} onPress={logout}>
             <Text style={styles.signOutText}>Sign out</Text>

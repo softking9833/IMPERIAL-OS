@@ -5,7 +5,7 @@ import { AppShell } from "@/components/AppShell";
 import { api } from "@/lib/api";
 
 type Lesson = Awaited<ReturnType<typeof api.lessons>>["lessons"][number];
-type DetailTab = "overview" | "content" | "settings";
+type DetailTab = "overview" | "content";
 
 function statusLabel(status: string) {
   if (status === "COMPLETED") return "Published";
@@ -246,7 +246,6 @@ export default function LearnPage() {
                     [
                       ["overview", "Overview"],
                       ["content", "Content"],
-                      ["settings", "Settings"],
                     ] as const
                   ).map(([id, label]) => (
                     <button
@@ -345,25 +344,6 @@ export default function LearnPage() {
                   </div>
                 ) : null}
 
-                {tab === "settings" ? (
-                  <div className="learn-settings stack">
-                    <p className="muted">
-                      Lesson settings are managed in Admin Config for V1. Progress below is
-                      from the current signed-in user.
-                    </p>
-                    <div className="card">
-                      <div>
-                        Status: <strong>{selected.progress.status}</strong>
-                      </div>
-                      <div className="muted" style={{ marginTop: 6 }}>
-                        Quiz score:{" "}
-                        {selected.progress.quizScore != null
-                          ? `${selected.progress.quizScore}%`
-                          : "—"}
-                      </div>
-                    </div>
-                  </div>
-                ) : null}
               </>
             )}
           </div>

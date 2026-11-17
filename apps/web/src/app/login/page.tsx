@@ -26,7 +26,6 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [remember, setRemember] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -222,20 +221,6 @@ export default function LoginPage() {
             <button className="login-submit" disabled={loading}>
               {loading ? "Signing in…" : "Sign In →"}
             </button>
-
-            <div className="login-row">
-              <label className="login-remember">
-                <input
-                  type="checkbox"
-                  checked={remember}
-                  onChange={(e) => setRemember(e.target.checked)}
-                />
-                Remember me
-              </label>
-              <a className="login-forgot" href="#" onClick={(e) => e.preventDefault()}>
-                Forgot password?
-              </a>
-            </div>
           </form>
 
           <div className="login-divider">Secure. Trusted. IMPERIAL.</div>
