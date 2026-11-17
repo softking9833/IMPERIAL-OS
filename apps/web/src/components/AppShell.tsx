@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import type { AuthUserSummary } from "@imperial/shared";
+import type { AuthUserSummary } from "@/lib/shared-types";
 import { api, getToken, setToken } from "@/lib/api";
 
 type NavLink = {

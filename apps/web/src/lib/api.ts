@@ -1,4 +1,4 @@
-import type { AuthUserSummary, LoginResponse } from "@imperial/shared";
+import type { AuthUserSummary, LoginResponse } from "@/lib/shared-types";
 
 /**
  * Resolve API base URL for local + LAN access.
