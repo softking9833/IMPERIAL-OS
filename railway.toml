@@ -1,0 +1,7 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install && npm run build:api"
+
+[deploy]
+startCommand = "cd apps/api && npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"
+restartPolicyType = "ON_FAILURE"

@@ -15,6 +15,8 @@
     "dev:mobile": "npm --prefix apps/mobile run dev",
     "build": "npm run build -w @imperial/shared && npm run build -w @imperial/api && npm run build -w @imperial/web",
     "build:web": "npm run build -w @imperial/shared && npm run build -w @imperial/web",
+    "build:api": "npm run build -w @imperial/shared && npm run db:generate -w @imperial/api && npm run build -w @imperial/api",
+    "start:api": "npm run start -w @imperial/api",
     "db:generate": "npm run db:generate -w @imperial/api",
     "db:migrate": "npm run db:migrate -w @imperial/api",
     "db:seed": "npm run db:seed -w @imperial/api",
