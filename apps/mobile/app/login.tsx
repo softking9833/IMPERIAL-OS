@@ -12,8 +12,8 @@ import { api, setToken } from "@/lib/api";
 import { colors } from "@/lib/theme";
 
 export default function LoginScreen() {
-  const [email, setEmail] = useState("associate@imperial.local");
-  const [password, setPassword] = useState("password123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -44,6 +44,8 @@ export default function LoginScreen() {
         keyboardType="email-address"
         value={email}
         onChangeText={setEmail}
+        placeholder="Email address"
+        placeholderTextColor={colors.muted}
         style={styles.input}
       />
 
@@ -52,6 +54,8 @@ export default function LoginScreen() {
         secureTextEntry
         value={password}
         onChangeText={setPassword}
+        placeholder="Password"
+        placeholderTextColor={colors.muted}
         style={styles.input}
       />
 
@@ -62,8 +66,6 @@ export default function LoginScreen() {
           <Text style={styles.buttonText}>Sign in</Text>
         )}
       </Pressable>
-
-      <Text style={styles.hint}>Demo: associate@imperial.local / password123</Text>
     </View>
   );
 }
@@ -120,10 +122,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     marginBottom: 8,
-  },
-  hint: {
-    color: colors.muted,
-    marginTop: 18,
-    fontSize: 12,
   },
 });

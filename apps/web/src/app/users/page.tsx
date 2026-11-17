@@ -23,7 +23,7 @@ export default function UsersPage() {
     firstName: "",
     lastName: "",
     email: "",
-    password: "password123",
+    password: "",
     role: "JUNIOR_ASSOCIATE" as "JUNIOR_ASSOCIATE" | "ASSOCIATE" | "MANAGING_DIRECTOR",
   });
 
@@ -45,7 +45,7 @@ export default function UsersPage() {
         firstName: "",
         lastName: "",
         email: "",
-        password: "password123",
+        password: "",
         role: "JUNIOR_ASSOCIATE",
       });
       await load();

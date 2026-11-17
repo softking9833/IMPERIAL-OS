@@ -820,14 +820,6 @@ input[type="number"] {
   color: var(--accent);
 }
 
-.login-demo {
-  margin: 14px 0 0;
-  text-align: center;
-  color: #6f7c76;
-  font-size: 0.72rem;
-  line-height: 1.45;
-}
-
 @media (max-width: 980px) {
   .login-shell {
     grid-template-columns: 1fr;

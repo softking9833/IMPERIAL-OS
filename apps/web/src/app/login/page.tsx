@@ -23,8 +23,8 @@ function Crown({ size = 42 }: { size?: number }) {
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("md@imperial.local");
-  const [password, setPassword] = useState("password123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [remember, setRemember] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -257,11 +257,6 @@ export default function LoginPage() {
             For authorised associates only
           </div>
 
-          <p className="login-demo">
-            Demo · MD md@imperial.local · Junior associate@imperial.local · Assoc assoc@imperial.local
-            <br />
-            password123
-          </p>
         </section>
       </div>
     </div>
