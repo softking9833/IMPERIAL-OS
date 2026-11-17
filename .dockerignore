@@ -1,0 +1,16 @@
+node_modules
+**/node_modules
+**/.next
+**/dist
+.git
+.expo
+apps/mobile
+DOC
+docs
+video
+Build
+*.zip
+*.db
+*.db-journal
+.env
+.env.*
