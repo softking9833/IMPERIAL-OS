@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { AuthUserSummary } from "@/lib/shared-types";
 import { api, getToken, setToken } from "@/lib/api";
+import { BrandMark } from "@/components/BrandMark";
 
 type NavLink = {
   href: string;
@@ -174,29 +175,6 @@ function NavIcon({ name }: { name: string }) {
   }
 }
 
-function CrownIcon({ size = 34 }: { size?: number }) {
-  return (
-    <svg
-      className="brand-crown"
-      width={size}
-      height={Math.round(size * 0.82)}
-      viewBox="0 0 34 28"
-      fill="none"
-      aria-hidden
-    >
-      <path
-        d="M3 22.5 6.5 8l6 7.5L17 4.5l4.5 11 6-7.5 3.5 14.5H3Z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path d="M5 22.5h24" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-      <circle cx="6.5" cy="7.2" r="1.4" fill="currentColor" />
-      <circle cx="17" cy="4" r="1.4" fill="currentColor" />
-      <circle cx="27.5" cy="7.2" r="1.4" fill="currentColor" />
-    </svg>
-  );
-}
 
 function SessionLoading({ label = "Preparing your workspace" }: { label?: string }) {
   return (
@@ -206,7 +184,7 @@ function SessionLoading({ label = "Preparing your workspace" }: { label?: string
         <span className="session-boot-ring" aria-hidden />
         <span className="session-boot-ring session-boot-ring-delay" aria-hidden />
         <div className="session-boot-crown">
-          <CrownIcon size={42} />
+          <BrandMark size={42} className="brand-mark" />
         </div>
       </div>
       <strong className="session-boot-brand">IMPERIAL OS</strong>
@@ -292,7 +270,7 @@ export function AppShell({
         <div className="sidebar-ornament bottom" aria-hidden />
 
         <div className="brand">
-          <CrownIcon />
+          <BrandMark size={44} className="brand-mark" />
           <strong>IMPERIAL OS</strong>
           <span>Built to Lead.</span>
         </div>

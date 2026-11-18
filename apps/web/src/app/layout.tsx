@@ -15,6 +15,10 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   title: "IMPERIAL OS",
   description: "IMPERIAL Operating System — Administration Portal",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/icon.png" }],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -139,9 +139,11 @@ select {
   padding: 8px 8px 4px;
 }
 
-.brand-crown {
+.brand-crown,
+.brand-mark {
   color: var(--accent-strong);
   margin-bottom: 2px;
+  display: block;
 }
 
 .brand strong {
@@ -672,6 +674,15 @@ input[type="number"] {
 .login-card-head {
   text-align: center;
   margin-bottom: 26px;
+  color: var(--accent-strong);
+}
+
+.login-card-head .brand-mark {
+  margin: 0 auto 4px;
+}
+
+.login-brand-mark .brand-mark {
+  color: var(--accent-strong);
 }
 
 .login-card-head h1 {
@@ -1695,10 +1706,13 @@ input[type="number"] {
 .home-hero-mark {
   position: relative;
   z-index: 1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   flex: 0 0 auto;
   padding-right: 8px;
+  color: var(--accent-strong);
 }
 
 .home-hero-mark strong {

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AppShell } from "@/components/AppShell";
+import { BrandMark } from "@/components/BrandMark";
 import { api } from "@/lib/api";
 
 type HomeData = Awaited<ReturnType<typeof api.home>>["home"];
@@ -119,6 +120,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="home-hero-mark">
+              <BrandMark size={36} className="brand-mark" />
               <strong>IMPERIAL</strong>
             </div>
           </section>

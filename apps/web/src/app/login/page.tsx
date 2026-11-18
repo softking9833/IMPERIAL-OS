@@ -3,23 +3,7 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { api, setToken } from "@/lib/api";
-
-function Crown({ size = 42 }: { size?: number }) {
-  return (
-    <svg width={size} height={Math.round(size * 0.82)} viewBox="0 0 34 28" fill="none" aria-hidden>
-      <path
-        d="M3 22.5 6.5 8l6 7.5L17 4.5l4.5 11 6-7.5 3.5 14.5H3Z"
-        stroke="#DFC07A"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <path d="M5 22.5h24" stroke="#DFC07A" strokeWidth="1.6" strokeLinecap="round" />
-      <circle cx="6.5" cy="7.2" r="1.4" fill="#DFC07A" />
-      <circle cx="17" cy="4" r="1.4" fill="#DFC07A" />
-      <circle cx="27.5" cy="7.2" r="1.4" fill="#DFC07A" />
-    </svg>
-  );
-}
+import { BrandMark } from "@/components/BrandMark";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -55,7 +39,7 @@ export default function LoginPage() {
       <div className="login-shell">
         <section className="login-brand">
           <div className="login-brand-mark">
-            <Crown size={48} />
+            <BrandMark size={56} className="brand-mark" />
             <strong>IMPERIAL OS</strong>
           </div>
 
@@ -145,7 +129,7 @@ export default function LoginPage() {
 
         <section className="login-card">
           <div className="login-card-head">
-            <Crown size={34} />
+            <BrandMark size={36} className="brand-mark" />
             <h1>Welcome Back</h1>
             <p>Sign in to access your IMPERIAL OS portal</p>
           </div>

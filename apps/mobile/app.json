@@ -4,17 +4,26 @@
     "slug": "imperial-os",
     "version": "0.1.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "scheme": "imperialos",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C100E"
+    },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.imperial.os"
+      "bundleIdentifier": "com.imperial.os",
+      "icon": "./assets/icon.png"
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0C100E"
       },
+      "icon": "./assets/icon.png",
       "package": "com.imperial.os",
       "usesCleartextTraffic": true
     },
