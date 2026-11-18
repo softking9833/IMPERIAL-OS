@@ -14,7 +14,8 @@ export const authRouter = Router();
 authRouter.post("/login", async (req, res) => {
   const parsed = z
     .object({
-      email: z.string().email(),
+      // Allow demo domains like @imperial (Zod .email() requires a TLD).
+      email: z.string().trim().min(3).regex(/^[^\s@]+@[^\s@]+$/),
       password: z.string().min(1),
     })
     .safeParse(req.body);

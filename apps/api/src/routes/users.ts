@@ -38,7 +38,7 @@ usersRouter.get("/", requireRoles("MANAGING_DIRECTOR"), async (_req, res) => {
 usersRouter.post("/", requireRoles("MANAGING_DIRECTOR"), async (req: AuthedRequest, res) => {
   const parsed = z
     .object({
-      email: z.string().email(),
+      email: z.string().trim().min(3).regex(/^[^\s@]+@[^\s@]+$/),
       password: z.string().min(6),
       firstName: z.string().min(1),
       lastName: z.string().min(1),
