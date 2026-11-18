@@ -305,30 +305,76 @@ export default function LearnPage() {
                     )}
 
                     {selected.quiz ? (
-                      <div className="stack">
-                        {selected.quiz.questions.map((q) => (
-                          <div key={q.id} className="card">
-                            <strong>{q.prompt}</strong>
-                            <div className="stack" style={{ marginTop: 8 }}>
-                              {q.options.map((opt) => (
-                                <label key={opt.id} style={{ color: "var(--text)" }}>
-                                  <input
-                                    type="radio"
-                                    name={q.id}
-                                    checked={answers[q.id] === opt.id}
-                                    onChange={() =>
-                                      setAnswers({ ...answers, [q.id]: opt.id })
-                                    }
-                                  />{" "}
-                                  {opt.text}
-                                </label>
-                              ))}
-                            </div>
+                      <div className="quiz-panel">
+                        <div className="quiz-intro">
+                          <span className="quiz-intro-icon" aria-hidden>
+                            ?
+                          </span>
+                          <div>
+                            <strong>Knowledge check</strong>
+                            <p>
+                              Select one answer per question. Pass mark is{" "}
+                              {selected.quiz.passScore ?? 70}%.
+                            </p>
                           </div>
-                        ))}
-                        <button className="btn primary" onClick={submitQuiz}>
-                          Submit quiz
-                        </button>
+                          <span className="quiz-count">
+                            {selected.quiz.questions.length} Q
+                          </span>
+                        </div>
+
+                        <div className="quiz-questions">
+                          {selected.quiz.questions.map((q, index) => {
+                            const answered = Boolean(answers[q.id]);
+                            return (
+                              <article
+                                key={q.id}
+                                className={`quiz-question${answered ? " answered" : ""}`}
+                              >
+                                <header className="quiz-question-head">
+                                  <span className="quiz-index">Q{index + 1}</span>
+                                  <h3>{q.prompt}</h3>
+                                </header>
+                                <div
+                                  className="quiz-options"
+                                  role="radiogroup"
+                                  aria-label={q.prompt}
+                                >
+                                  {q.options.map((opt) => {
+                                    const selectedOpt = answers[q.id] === opt.id;
+                                    return (
+                                      <label
+                                        key={opt.id}
+                                        className={`quiz-option${selectedOpt ? " selected" : ""}`}
+                                      >
+                                        <input
+                                          type="radio"
+                                          name={q.id}
+                                          value={opt.id}
+                                          checked={selectedOpt}
+                                          onChange={() =>
+                                            setAnswers({ ...answers, [q.id]: opt.id })
+                                          }
+                                        />
+                                        <span className="quiz-radio" aria-hidden />
+                                        <span className="quiz-option-text">{opt.text}</span>
+                                      </label>
+                                    );
+                                  })}
+                                </div>
+                              </article>
+                            );
+                          })}
+                        </div>
+
+                        <div className="quiz-actions">
+                          <button className="btn primary" type="button" onClick={submitQuiz}>
+                            Submit quiz
+                          </button>
+                          <span className="muted">
+                            {Object.keys(answers).length}/
+                            {selected.quiz.questions.length} answered
+                          </span>
+                        </div>
                       </div>
                     ) : (
                       <button
