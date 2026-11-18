@@ -23,4 +23,5 @@ RUN npm run build:api
 WORKDIR /app/apps/api
 EXPOSE 4000
 
+# Always migrate + reseed so demo accounts match the latest seed (emails, etc.).
 CMD ["sh", "-c", "npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"]

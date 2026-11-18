@@ -12,6 +12,7 @@ import { performanceRouter } from "./routes/performance.js";
 import { homeRouter } from "./routes/home.js";
 import { profileRouter } from "./routes/profile.js";
 import { roleplayRouter } from "./routes/roleplay.js";
+import { migrateDemoEmails } from "./lib/demoEmails.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 4000);
@@ -44,6 +45,16 @@ app.use((err: unknown, _req: express.Request, res: express.Response, _next: expr
   res.status(500).json({ error: "Internal server error" });
 });
 
-app.listen(port, "0.0.0.0", () => {
-  console.log(`IMPERIAL OS API listening on http://0.0.0.0:${port}`);
-});
+async function boot() {
+  try {
+    await migrateDemoEmails();
+  } catch (err) {
+    console.error("Demo email migration skipped:", err);
+  }
+
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`IMPERIAL OS API listening on http://0.0.0.0:${port}`);
+  });
+}
+
+boot();
