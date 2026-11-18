@@ -46,15 +46,16 @@ app.use((err: unknown, _req: express.Request, res: express.Response, _next: expr
 });
 
 async function boot() {
+  // Listen first so Railway healthchecks don't 502 if seed/migrate is slow.
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`IMPERIAL OS API listening on http://0.0.0.0:${port}`);
+  });
+
   try {
     await migrateDemoEmails();
   } catch (err) {
     console.error("Demo email migration skipped:", err);
   }
-
-  app.listen(port, "0.0.0.0", () => {
-    console.log(`IMPERIAL OS API listening on http://0.0.0.0:${port}`);
-  });
 }
 
 boot();

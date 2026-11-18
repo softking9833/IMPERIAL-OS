@@ -20,8 +20,9 @@ ENV DATABASE_URL="file:./prod.db"
 
 RUN npm run build:api
 
-WORKDIR /app/apps/api
+WORKDIR /app
 EXPOSE 4000
 
-# Always migrate + reseed so demo accounts match the latest seed (emails, etc.).
-CMD ["sh", "-c", "npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"]
+# Absolute paths so this works whether Railway uses Dockerfile CMD
+# or a custom start command from the service root.
+CMD ["sh", "-c", "cd /app/apps/api && npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"]
