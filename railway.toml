@@ -3,8 +3,7 @@ builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-# Intentionally empty — use Dockerfile CMD so migrate + seed always run
-# from WORKDIR /app/apps/api (do not set "cd apps/api ..." here).
+startCommand = "/app/apps/api/start.sh"
 restartPolicyType = "ON_FAILURE"
 healthcheckPath = "/health"
 healthcheckTimeout = 30

@@ -18,11 +18,11 @@ COPY apps/api apps/api
 
 ENV DATABASE_URL="file:./prod.db"
 
-RUN npm run build:api
+RUN npm run build:api \
+  && chmod +x /app/apps/api/start.sh
 
 WORKDIR /app
 EXPOSE 4000
 
-# Absolute paths so this works whether Railway uses Dockerfile CMD
-# or a custom start command from the service root.
-CMD ["sh", "-c", "cd /app/apps/api && npx prisma migrate deploy && npx tsx prisma/seed.ts && node dist/index.js"]
+# Single executable — Railway custom start must NOT use `cd`/`&&` (no shell).
+CMD ["/app/apps/api/start.sh"]
