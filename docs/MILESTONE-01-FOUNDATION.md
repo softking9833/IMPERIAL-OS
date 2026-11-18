@@ -34,9 +34,9 @@ Prove the architectural spine of IMPERIAL OS before building every module deeply
 
 ## Demo accounts
 
-- Managing Director: `md@imperial` / `password123`
-- Junior Associate: `associate@imperial` / `password123`
-- Associate: `assoc@imperial` / `password123`
+- Managing Director: `md@imperial.com` / `password123`
+- Junior Associate: `associate@imperial.com` / `password123`
+- Associate: `assoc@imperial.com` / `password123`
 
 ## Suggested demo path
 

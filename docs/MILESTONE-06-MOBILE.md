@@ -32,4 +32,4 @@ See [`V1-TEST-CHECKLIST.md`](./V1-TEST-CHECKLIST.md).
 
 ### Demo login
 
-`associate@imperial` / `password123`
+`associate@imperial.com` / `password123`

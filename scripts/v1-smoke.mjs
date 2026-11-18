@@ -52,8 +52,8 @@ async function main() {
   let mdToken, assocToken, assocId, mdId;
 
   try {
-    const md = await login("md@imperial");
-    const assoc = await login("associate@imperial");
+    const md = await login("md@imperial.com");
+    const assoc = await login("associate@imperial.com");
     mdToken = md.token;
     assocToken = assoc.token;
     assocId = assoc.user.id;
@@ -89,7 +89,7 @@ async function main() {
     });
     const me = await req("/auth/me", { token: assocToken });
     // token may have stale claims — login again
-    const assoc2 = await login("associate@imperial");
+    const assoc2 = await login("associate@imperial.com");
     assocToken = assoc2.token;
     assert(assoc2.user.isFieldReady === true, "associate not field ready after approve");
     ok("Field Readiness complete + MD approve");
@@ -316,7 +316,7 @@ async function main() {
   // Profile
   try {
     const p = await req("/profile/me", { token: assocToken });
-    assert(p.profile?.email === "associate@imperial", "profile email");
+    assert(p.profile?.email === "associate@imperial.com", "profile email");
     ok("Profile identity view");
   } catch (e) {
     fail("Profile identity view", e);

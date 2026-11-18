@@ -47,7 +47,7 @@ async function main() {
   const md = await prisma.user.create({
     data: {
       organisationId: org.id,
-      email: "md@imperial",
+      email: "md@imperial.com",
       passwordHash,
       firstName: "Teon",
       lastName: "West",
@@ -73,7 +73,7 @@ async function main() {
   const junior = await prisma.user.create({
     data: {
       organisationId: org.id,
-      email: "associate@imperial",
+      email: "associate@imperial.com",
       passwordHash,
       firstName: "Alex",
       lastName: "Junior",
@@ -107,7 +107,7 @@ async function main() {
   const associate = await prisma.user.create({
     data: {
       organisationId: org.id,
-      email: "assoc@imperial",
+      email: "assoc@imperial.com",
       passwordHash,
       firstName: "Sam",
       lastName: "Associate",
@@ -368,9 +368,9 @@ async function main() {
   });
 
   console.log("Seeded IMPERIAL OS demo data (V1 — 3 roles)");
-  console.log("MD:              md@imperial / password123");
-  console.log("Junior Associate: associate@imperial / password123");
-  console.log("Associate:       assoc@imperial / password123");
+  console.log("MD:              md@imperial.com / password123");
+  console.log("Junior Associate: associate@imperial.com / password123");
+  console.log("Associate:       assoc@imperial.com / password123");
   console.log(`MD id: ${md.id}`);
   console.log(`Junior id: ${junior.id}`);
   console.log(`Associate id: ${associate.id}`);

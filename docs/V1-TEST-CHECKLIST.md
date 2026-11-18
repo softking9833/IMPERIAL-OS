@@ -22,9 +22,9 @@ npm run dev:mobile
 
 | Role | Email | Password |
 |------|-------|----------|
-| Managing Director | `md@imperial` | `password123` |
-| Junior Associate | `associate@imperial` | `password123` |
-| Associate | `assoc@imperial` | `password123` |
+| Managing Director | `md@imperial.com` | `password123` |
+| Junior Associate | `associate@imperial.com` | `password123` |
+| Associate | `assoc@imperial.com` | `password123` |
 
 > After seed, Associate is **not** Field Ready and has **no** deployment. Do steps 1–3 first.
 

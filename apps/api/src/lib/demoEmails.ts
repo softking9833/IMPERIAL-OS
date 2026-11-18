@@ -1,10 +1,13 @@
 import { prisma } from "./prisma.js";
 
-/** Rename legacy demo logins if the DB was seeded before @imperial.local → @imperial. */
+/** Rename legacy demo logins to @imperial.com (valid email TLD for Zod). */
 const EMAIL_RENAMES: Array<[from: string, to: string]> = [
-  ["md@imperial.local", "md@imperial"],
-  ["associate@imperial.local", "associate@imperial"],
-  ["assoc@imperial.local", "assoc@imperial"],
+  ["md@imperial.local", "md@imperial.com"],
+  ["associate@imperial.local", "associate@imperial.com"],
+  ["assoc@imperial.local", "assoc@imperial.com"],
+  ["md@imperial", "md@imperial.com"],
+  ["associate@imperial", "associate@imperial.com"],
+  ["assoc@imperial", "assoc@imperial.com"],
 ];
 
 export async function migrateDemoEmails() {
@@ -15,7 +18,6 @@ export async function migrateDemoEmails() {
 
     const taken = await prisma.user.findUnique({ where: { email: to } });
     if (taken) {
-      // Free the legacy address; keep the row that already has the new email.
       await prisma.user.update({
         where: { id: legacy.id },
         data: { email: `retired.${Date.now()}.${from}` },
@@ -33,6 +35,6 @@ export async function migrateDemoEmails() {
     console.log(`Migrated demo email ${from} → ${to}`);
   }
   if (changed === 0) {
-    console.log("Demo email migration: no legacy @imperial.local accounts found");
+    console.log("Demo email migration: no legacy accounts found");
   }
 }
